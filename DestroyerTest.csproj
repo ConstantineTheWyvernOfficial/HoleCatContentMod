@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+
+	<!-- Import tModLoader mod properties -->
+	<Import Project="..\tModLoader.targets" />
+
+	<!-- General -->
+	<PropertyGroup>
+		
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Reference Include="InnoVault">
+	    <HintPath>..\ModAssemblies\InnoVault_v1.9.26.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+	
+
+	<!-- References -->
+
+</Project>

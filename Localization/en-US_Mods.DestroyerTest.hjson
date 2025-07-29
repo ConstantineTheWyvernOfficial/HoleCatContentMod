@@ -1,0 +1,3582 @@
+/*
+Categories in this file are to be ordered as such:
+UberParent -> Parent -> Child -> GrandChild
+Any further Subcategories should not exist.
+
+Items should be ordered Alphabetically if possible, unless overriden, such as with the Consitution Lineage.
+MultiCategory items are able to and are encouraged to be included in both their categories, as the Parser will simply use the latest instance in the file.
+*/
+
+Items: {
+	# Section Divider
+	# - -
+	# UberParent Category: Weapons
+	# Parent Category: Constitution Lineage
+	# - -
+	# Section Divider
+	Constitution: {
+		Tooltip: A blade from another world, seemingly though, it is incomplete...
+		DisplayName: Constitution
+	}
+
+	ConstitutionT2_Demonite: {
+		DisplayName: Committment
+		Tooltip: Swings rain small meteors, which set enemies ablaze.
+	}
+
+	ConstitutionT2_Crimtane: {
+		DisplayName: Committment
+		Tooltip: Swings rain small meteors, which set enemies ablaze.
+	}
+
+	ConstitutionT3: {
+		DisplayName: Continuum
+		Tooltip: Crafted in the night with the Essence of raw strength, this blade posesses enough power in it's swing to throw you forward.
+	}
+
+	ConstitutionT3Lash: {
+		DisplayName: Constitution T3 Lash
+		Tooltip: ""
+	}
+
+	Lizhard_Claymore: {
+		Displayname: Corrolary
+		Tooltip: Much heavier than your previous blade, this one is adorned in stone and posesses the power to split even the strongest stones.
+		DisplayName: Lizhard_ Claymore
+	}
+
+	Conclusion: {
+		UsesDashResource: Mods.DestroyerTest.Items.Conclusion.UsesDashResource
+		DisplayName: Conclusion
+		Tooltip:
+			'''
+			At last, the blade feels complete, and its handle rests comfortably in your grip.
+			All attacks grant immunity frames, but dashes will disorient the player momentarily.
+			Press [StarBlastKeybind] to create a burst of Celestial Stars that home in on enemies.
+			'''
+	}
+
+	# Section Divider
+	# - -
+	# UberParent Category: Weapons
+	# Parent Category: Vanilla Material Weapons
+	# Child Category: Melee Weapons
+	# - -
+	# Section Divider
+	
+	Memoriam: {
+		DisplayName: Memoriam
+		Tooltip: Not all can be rended, and not all evils are surmountable. Keep this as a reminder of mindfulness in trying times.
+	}
+
+	SpiritOfJustice: {
+		DisplayName: Spirit Of Justice
+		Tooltip: Rend all that is unholy, and mend the errors of this world. Your mission is surely holy, and all blood is shed in good faith.
+	}
+
+	FrigidHalberd: {
+		DisplayName: Frigid Halberd
+		Tooltip:
+			'''
+			Left Click to perform a long range Jab Blitz, Right Click to flail your Halberd Around and ignite enemies in Frozen Flames.
+			"No more Mr Ice Guy!"
+			'''
+	}
+
+	GlacialJabber: {
+		DisplayName: Glacial Jabber
+		Tooltip:
+			'''
+			A stronger version of your original Halberd, with a much more potent Jab.
+			"How Ice of you to show this old thing some love again!"
+			'''
+	}
+
+	WinterWonderland: {
+		Tooltip:
+			'''
+			With a festive twist from Saint Nich himself, this Halberd is now flailed with a lively mistletoe rope, inflicting frostburn and shooting petals of holly at your foes!
+			"When the bells ring, everyone's gonna be out Cold."
+			'''
+		DisplayName: Winter Wonderland
+	}
+
+	# Section Divider
+	# - -
+	# UberParent Category: Weapons
+	# Parent Category: Vanilla Material Weapons
+	# Child Category: Rogue Weapons
+	# - -
+	# Section Divider
+	
+	Chroma: {
+		DisplayName: Chroma
+		Tooltip: Light shimmers along the edges of the crystals...
+	}
+
+	P_Noctis: {
+		DisplayName: Passer Noctis
+		Tooltip:
+			'''
+			Just holding this instills dread in the deepest nooks of your soul.
+			You will ciritcal hit 100% of the time, but hits will slow you down and prevent you from regenerating life.
+			'''
+	}
+
+	# Section Divider
+	# - -
+	# UberParent Category: Weapons
+	# Parent Category: Vanilla Material Weapons
+	# Child Category: Magic Weapons
+	# - -
+	# Section Divider
+	
+	Skyshredder: {
+		DisplayName: Quattra Skyshredder
+		Tooltip: Rains down Hallowed Darts to rip your enemies to peices.
+	}
+
+	NihilistStaff: {
+		Tooltip: Get Cruiser'd
+		DisplayName: Nihilist Staff
+	}
+
+	# Section Divider
+	# - -
+	# UberParent Category: Weapons
+	# Parent Category: Vanilla Material Weapons
+	# Child Category: Summon Weapons
+	# - -
+	# Section Divider
+	
+	Hope_Scabbard: {
+		DisplayName: Hope Scabbard
+		Tooltip: A combined effort of the blades that accompanied you on your road to the wall...
+	}
+
+	NihilistsEnslavement: {
+		DisplayName: Nihilists Enslavement
+		Tooltip:
+			'''
+			To indulge in nothingness is to revel in your own ignorance. 
+			Supposedly a much happier life than the horrors of being a good person. 
+			Dedicated to a talented mod team.
+			'''
+	}
+
+	# Section Divider
+	# - -
+	# UberParent Category: Weapons
+	# Parent Category: Vanilla Material Weapons
+	# Child Category: Ranged Weapons
+	# - -
+	# Section Divider
+	
+	OverloadedBlaster: {
+		DisplayName: Overloaded Blaster
+		Tooltip: An unstable weapon with no forseeable purpose beyond the reckless slaughter of life.
+	}
+
+	PrecisionArrow: {
+		DisplayName: Precision Arrow
+		Tooltip:
+			'''
+			Manufactured with accuracy in mind, these arrows use a sturdy adamantite frame with a razor sharp edge.
+			They slice through enemy flesh so easily that it doesn't even knock them backwards.
+			'''
+	}
+
+	TacticalArrow: {
+		DisplayName: Tactical Arrow
+		Tooltip:
+			'''
+			Manufactured with Speed in mind, these arrows shoot faster than the simple Precision Arrows.
+			These arrows electify struck enemies for a short period.
+			'''
+	}
+
+	Hi_TechArrow: {
+		DisplayName: Hi-Tech Arrow
+		Tooltip:
+			'''
+			Manufactured with Adaptibility in Mind, these arrows make use of the mysterious tracking properties of the Martians' Conduit plating.
+			Seemingly Tesla Turrets can aim with no circuitry, and rely on the conduit plating for that job.
+			'''
+	}
+
+	# Section Divider
+	# - -
+	# UberParent Category: Resources
+	# Parent Category: Vanilla Material Resources
+	# Child Category: Cloths
+	# - -
+	# Section Divider
+	
+	BlackCloth: {
+		DisplayName: Black Cloth
+		Tooltip: A beautiful satin, colored pitch like the night sky.
+	}
+
+	BlueCloth: {
+		DisplayName: Blue Cloth
+		Tooltip: A beautiful satin, colored blue like the ocean's epanse.
+	}
+
+	BrownCloth: {
+		DisplayName: Brown Cloth
+		Tooltip: A beautiful satin, colored brown like the rough earth below.
+	}
+
+	CyanCloth: {
+		DisplayName: Cyan Cloth
+		Tooltip: A beautiful satin, colored a radiant blue-green like the horizon.
+	}
+
+	GreenCloth: {
+		DisplayName: Green Cloth
+		Tooltip: A beautiful satin, colored green like the verdant grasses.
+	}
+
+	LimeCloth: {
+		DisplayName: Lime Cloth
+		Tooltip: A beautiful satin, colored lime like cursed flames.
+	}
+
+	OrangeCloth: {
+		DisplayName: Orange Cloth
+		Tooltip: A beautiful satin, colored orange like... well, an Orange.
+	}
+
+	PurpleCloth: {
+		DisplayName: Purple Cloth
+		Tooltip: A beautiful satin, colored purple like night terrors.
+	}
+
+	PinkCloth: {
+		DisplayName: Pink Cloth
+		Tooltip: A beautiful satin, colored pink like rosy cheeks.
+	}
+
+	RedCloth: {
+		DisplayName: Red Cloth
+		Tooltip: A beautiful satin, colored rich like blood.
+	}
+
+	SkyBlueCloth: {
+		DisplayName: Sky Blue Cloth
+		Tooltip: A beautiful satin, colored blue like harpy feathers.
+	}
+
+	TealCloth: {
+		DisplayName: Teal Cloth
+		Tooltip: A beautiful satin, colored green-blue like rust.
+	}
+
+	VioletCloth: {
+		DisplayName: Violet Cloth
+		Tooltip: A beautiful satin, colored a deep purple like an sapphire inside stone.
+	}
+
+	WhiteCloth: {
+		DisplayName: White Cloth
+		Tooltip: A beautiful satin, colored pure like your heart.
+	}
+
+	YellowCloth: {
+		DisplayName: Yellow Cloth
+		Tooltip: A beautiful satin, colored a brilliant yellow like the summer sun.
+	}
+
+	# Section Divider
+	# - -
+	# UberParent Category: Resources
+	# Parent Category: Modded Resources
+	# - -
+	# Section Divider
+	
+	TeslaScrap: {
+		DisplayName: Tesla Scrap
+		Tooltip: Electrified Fragments of Conduit Plating extracted from Tesla Turrets.
+	}
+
+	TeaserCompendium: {
+		DisplayName: Teaser Compendium
+		Tooltip:
+			'''
+			Current Teaser: A bloodthirsty Baron has been lurking in the night...
+			Rift Update Teaser: The Shadows of the dark sun grow ever restless. _They thirst for oxygen..._
+			'''
+	}
+
+	EchoFluid: {
+		DisplayName: Echo Fluid
+		Tooltip: Kills 99.9% if bacteria! Also clears colors on cloths.
+	}
+
+	LifeEcho: {
+		DisplayName: Life Echo
+		Tooltip: The energy of simple creatures. Note: This is not their soul, simply their energy.
+	}
+
+	Living_Shadow: {
+		DisplayName: Living Shadow
+		Tooltip: A blob of condensed shadows with a ring of concentrated light around it. It gives life to the horrors drummed up in the shadows of an Eclipse.
+	}
+
+	# Note: Riftplate is MultiCategory
+	Riftplate_Item: {
+		DisplayName: Riftplate
+		Tooltip:
+			'''
+			You have somehow encased the raw essence of The Sun's Shadow inside an iron casing.
+			Stimulating this with an electrical current will awaken the essence, but, be warned, once turned on, it cannot be turned off without being mined.
+			'''
+	}
+
+	Helicite_Crystal_Item: {
+		DisplayName: Helicite Crystal
+		Tooltip: The death of the Sun God has sent fragments of the Sun deep into your world. It is hot to the touch.
+	}
+
+	# Section Divider
+	# - -
+	# Parent Category: Rift Biome
+	# Child Category: Rift Arsenal
+	# - -
+	# Section Divider
+	
+	Rift_Katana: {
+		DisplayName: Rift Katana
+		Tooltip:
+			'''
+			Small flames lick the wooden tang. You have tamed them.
+			Right Click to fire a stream of homing darts that follow your mouse cursor.
+			'''
+	}
+
+	RiftMaker: {
+		DisplayName: Riftmaker
+		Tooltip: Flames Eat away at the wooden tang. Careful holding it!
+	}
+
+	RiftWretcher: {
+		DisplayName: Rift Wretcher
+		Tooltip: A specialized clentaminator made to handle the intense energy let out by Living Shadows.
+	}
+
+	RiftShiv: {
+		Tooltip: Was the spiral really necessary?
+		DisplayName: Rift Shiv
+	}
+
+	RiftWhipT1: {
+		Tooltip: Feel the burn!
+		DisplayName: Solar Scorpion
+	}
+
+	RiftWhipT2: {
+		DisplayName: Solar Scorpion
+		Tooltip: Feel the Burn again!
+	}
+
+	RiftBroadsword: {
+		DisplayName: Rift Broadsword
+		Tooltip: A durable broadsword made from Riftplate and living shadows. In terms of weaponry, it's standard faire.
+	}
+
+	RiftGreatsword: {
+		Tooltip: A heavy-hitting Blade made from Riftplate and Living Shadows. It takes more strength to continually carry this than to wield it.
+		DisplayName: Rift Greatsword
+	}
+
+	RiftClaymore: {
+		DisplayName: Rift Claymore
+		Tooltip: A heavy blade with great range. Very easily cleaves your enemies in half!
+	}
+
+	# Section Divider
+	# - -
+	# Parent Category: Rift Biome
+	# Child Category: Rift Tiles
+	# - -
+	# Section Divider
+	
+	Riftpane_Item: {
+		DisplayName: Riftpane
+		Tooltip:
+			'''
+			You have also somehow infused glass with the essence of The Sun's Shadow. 
+			Unfortunately, because it is so strong, it cannot shatter, and panes will come off whole if broken off, so be careful not to get crushed!
+			'''
+	}
+
+	RiftplateWall_Item: {
+		DisplayName: Riftplate Wall
+		Tooltip: You must love to sweat if youre making a room out of Riftplate
+	}
+
+	RiftpaneWall_Item: {
+		DisplayName: Riftpane Wall
+		Tooltip: You must love to sweat if youre making a room out of Riftplate
+	}
+
+	DangerousRiftWall_Item: {
+		DisplayName: Dangerous Rift Wall
+		Tooltip: Creatures will spawn if these are present.
+	}
+
+	RiftSilt_Item: {
+		DisplayName: Rift Silt
+		Tooltip: This sand is scalding! Perfect for Turkish coffee!
+	}
+
+	RiftWall_Item: {
+		DisplayName: Rift Wall
+		Tooltip: Dark. So Dark.
+	}
+
+	# Section Divider
+	# - -
+	# Parent Category: Rift Biome
+	# Child Category: Rift Tiles
+	# Grandchild Category: Rift Furniture
+	# - -
+	# Section Divider
+	
+	RiftChair_Item: {
+		DisplayName: Rift Chair
+		Tooltip: Despite burning with solar essence, it's only balmy and not scalding.
+	}
+
+	RiftTable_Item: {
+		Tooltip: Itll keep your food warm!
+		DisplayName: Rift Table
+	}
+
+	RiftCrucible_Item: {
+		DisplayName: Rift Crucible
+		Tooltip: A powerful forge capable of infusing Living Shadows into even more things.
+	}
+
+	# Note: PasswordDecoder is MultiCategory. Placed in here for now because it is tied to the Rift Cache
+	PasswordDecoder: {
+		DisplayName: Password Decoder
+		Tooltip: A device used for opening password-protected Rift Caches. Simply plug it in and it will brute force passwords until it succeeds.
+	}
+
+	RiftCache_Item: {
+		DisplayName: Rift Cache
+		Tooltip: A storage unit that is notorious for having only a basic security system. Simply brute-forcing passwords is enough to get inside it.
+	}
+
+	RiftSolution: {
+		DisplayName: Rift Solution
+		Tooltip: A small bottle of Solar Light.
+	}
+
+	RiftBookcase: {
+		DisplayName: Rift Catalogue
+		Tooltip: A digital compendium that could fit a thousand novels in plaintext.
+	}
+
+	RiftplatePlatform: {
+		DisplayName: Riftplate Platform
+		Tooltip: ""
+	}
+
+	# Section Divider
+	# - -
+	# Parent Category: Rift Biome
+	# Child Category: Rift Equips
+	# - -
+	# Section Divider
+	
+	RiftGuardChausses: {
+		DisplayName: Rift Guard Chausses
+		Tooltip: A simple armor set meant to be worn around the edges of Rifted areas, as Oxygen can leak out of it fairly easily.
+	}
+
+	RiftGuardChestPlate: {
+		DisplayName: Rift Guard Chest Plate
+		Tooltip: A simple armor set meant to be worn around the edges of Rifted areas, as Oxygen can leak out of it fairly easily.
+	}
+
+	RiftGuardVisor: {
+		DisplayName: Rift Guard Visor
+		Tooltip: A simple armor set meant to be worn around the edges of Rifted areas, as Oxygen can leak out of it fairly easily.
+	}
+
+	RiftPropulsion: {
+		DisplayName: Rift Propulsion
+		Tooltip: A device inspired by an alien technology.
+	}
+
+	HeliciteChausses: {
+		DisplayName: Helicite Chausses
+		Tooltip:
+			'''
+			Despite being made of Cloth, these do not leak any oxygen, and will protect you from suffocation in The Rift.
+			The infusion of Helicite into the cloth allows for this to happen. Quite an anomaly, those crystals are...
+			'''
+	}
+
+	HeliciteCowl: {
+		DisplayName: Helicite Cowl
+		Tooltip:
+			'''
+			Despite being made of Cloth, this does not leak any oxygen, and will protect you from suffocation in The Rift.
+			The infusion of Helicite into the cloth allows for this to happen. Quite an anomaly, those crystals are...
+			Ranged Damage is increased when wearing this!
+			'''
+	}
+
+	HeliciteRobe: {
+		DisplayName: Helicite Robe
+		Tooltip:
+			'''
+			Despite being made of Cloth, this does not leak any oxygen, and will protect you from suffocation in The Rift.
+			The infusion of Helicite into the cloth allows for this to happen. Quite an anomaly, those crystals are...
+			'''
+	}
+
+	HeliciteHeadgear: {
+		DisplayName: Helicite Headgear
+		Tooltip:
+			'''
+			Unfortunately for you, just having helicite crystals next to your head does not prevent suffocation in The Rift.
+			Try using a Lung Shot.
+			'''
+	}
+
+	RiftplateTitanBody: {
+		Tooltip: A much heavier set of Riftplate Armor, meant for deeper expiditions into The Rift.
+		DisplayName: Riftplate Titan Body Armor
+	}
+
+	RiftplateTitanGreaves: {
+		Tooltip: A much heavier set of Riftplate Armor, meant for deeper expiditions into The Rift.
+		DisplayName: Riftplate Titan Greaves
+	}
+
+	RiftPlateBerserkerHelm: {
+		Tooltip:
+			'''
+			A much heavier set of Riftplate Armor, meant for deeper expiditions into The Rift.
+			Wearing this increases Melee Damage, but reduces Movement speed.
+			'''
+		DisplayName: Rift Plate Berserker Helm
+	}
+
+	RiftPlateHoodedJaw: {
+		SetBonus: RHJ_SB
+		DisplayName: Rift Plate Hooded Jaw
+		Tooltip:
+			'''
+			A much heavier set of Riftplate Armor, meant for deeper expiditions into The Rift.
+			Wearing this increases your number of minions.
+			'''
+	}
+
+	RiftplateAgilityArmor: {
+		DisplayName: Riftplate Agility Armor
+		Tooltip:
+			'''
+			A light set of armor. It carries the protection from Suffocation afforded by Helicite Crystals.
+			This armor exchanges defense for speed, allowing you to evade attacks easier.
+			'''
+	}
+
+	RiftplateAgilityLeggings: {
+		DisplayName: Riftplate Agility Leggings
+		Tooltip:
+			'''
+			A light set of armor. It carries the protection from Suffocation afforded by Helicite Crystals.
+			This armor exchanges defense for speed, allowing you to evade attacks easier.
+			'''
+	}
+
+	# Section Divider
+	# - -
+	# Parent Category: Special Tooltip Items
+	# Child Category: Codexes and Compendiums
+	# - -
+	# Section Divider
+	
+	CalamityEntropyAdvert: {
+		DisplayName: Calamity Entropy Advert
+		Tooltip:
+			'''
+			Download Calamity Entropy Today!
+			Calamity Entropy is an Addon for the Calamity Mod that adds multiple new bosses, weapons (With copyright infringements!), pets, and more!
+			Listen to Music Tracks made for the mod here: https://www.youtube.com/@FRANCIUM-KILLA
+			Multiple Items in this mod were inspired by Calamity Entropy! Including:
+			- The Riftmaker
+			- The Nihilist Staff and Nihilist's Enslavement
+			'''
+	}
+
+	CraftingCompendium: {
+		DisplayName: Crafting Compendium
+		Tooltip:
+			'''
+			∞ A Collection of Hints to help you craft the Various weapons found in the mod!                 
+			∞ Do note, this list is never complete, as more features will continue to be added.             
+			∞ Constitution: Extract basic ores from the ground, and assemble them at an Anvil.              
+			∞ Committment: Acquire the wretched essence of your world's darkest crevices,                   
+			∞ and collect the spoils of a cosmic Intrusion. Use them to bolster your Composure.             
+			∞ Continuum: Shatter the Spine of the mechanical Cuthulu to gain the essence of raw strength,   
+			∞ and return to the mines to extract a more durable ore. Use them to reinfoce your Resolve.     
+			∞ Corrolary: Raid an isolated society and dethrone their deity. Fuze their heavy bricks to      
+			∞ your blade and revel in the bloodshed.                                                        
+			∞ Conclusion: Beat back the lunar visitors, and proclaim the world as your own. Return to your  
+			∞ workshop one final time, and release your now prepared sword from its Lihzhardian sheath.     
+			∞ Combine it with the ingots of lunar steel, the tears from the heavens above, and the          
+			∞ conglomerated souls of the Dungeon's unfortunate residents.                                   
+			'''
+	}
+
+	HistoryTextbook: {
+		DisplayName: History Textbook
+		Tooltip:
+			'''
+			∞ Mod History:                                                                                  
+			∞ V:1.0 - Added the Constitution Lineage, Dev Set, Two Rift Weapons, and various other weapons  
+			∞ that toyed around with the Example Mod code.                                                  
+
+			'''
+	}
+
+	GargoyleTrepidation: {
+		DisplayName: (WIP) Gargoyle Trepidation
+		Tooltip: Place this statue to know true fear.
+	}
+
+	ConstantineMask: {
+		DisplayName: Constantine Mask
+		Tooltip: Great for Impersonating Suicidal Devs!
+	}
+
+	CoatStantine: {
+		DisplayName: CoatStantine
+		Tooltip: Great for Impersonating Suicidal Devs!
+	}
+
+	ConstanJeans: {
+		DisplayName: ConstanJeans
+		Tooltip: Great for Impersonating Suicidal Devs!
+	}
+
+	Connie_Doll: {
+		DisplayName: Connie Doll
+		Tooltip:
+			'''
+			There's a tag on the hip seam.
+			"WARNING: Keep away from Shimmer. Especially if you only have one life..."
+			Sounds like a solid indicator to throw it into the shimmer.
+			'''
+	}
+
+	ConstantineTail: {
+		DisplayName: Constantine Tail
+		Tooltip: Great for Impersonating Suicidal Devs!
+	}
+
+	Goliath: {
+		DisplayName: Goliath
+		Tooltip: A far less powerful, yet far more elegant equivalent to the elusive Terra Blade.
+	}
+
+	ConstantineScythe: {
+		DisplayName: HoleCat's Scythe
+		Tooltip:
+			'''
+			Are we not all looking for our own reflections?
+			.
+			Great for going the extra mile in impersonating Suicidal Devs!
+			'''
+	}
+
+	Memoriam_Placed: {
+		DisplayName: (DEBUG)MemoriamPlaced
+		Tooltip: ""
+	}
+
+	LungShot: {
+		DisplayName: Lung Shot
+		Tooltip: The price for protection is often pain.
+	}
+
+	HeroBreastplate: {
+		DisplayName: Hero Breastplate
+		Tooltip: A clunky breastplate befitting of a lazy emperor under siege.
+	}
+
+	HeroGreaves: {
+		DisplayName: Hero Greaves
+		Tooltip: Uncomfortable, heavy leggings, which are definitely not assuaged by the lack of padding in the metal shoes.
+	}
+
+	HeroHelmet: {
+		DisplayName: Hero Helmet
+		Tooltip:
+			'''
+			Heavy, but breatheable, that is, of course if you keep the visor up.
+			Press J to bring down your Visor, increasing defense by 4.
+			'''
+	}
+
+	HeroWings: {
+		DisplayName: Hero Wings
+		Tooltip: A defender of their people must also be able to come to their aide promptly!
+	}
+
+	CunifeBar: {
+		DisplayName: Cunife Bar
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			Alloy of Iron and Copper.
+			'''
+	}
+
+	Flux: {
+		DisplayName: Flux
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			Used for combining ores into alloy bars.
+			Composed of unrefined calcium.
+			'''
+	}
+
+	GoliathHilt: {
+		DisplayName: Cunife Hilt
+		Tooltip:
+			'''
+			Remarkably Large, but is comfortable to hold, with a plush satin grip. Must be for a big and heavy sword.
+			Seems to be part of a greater whole...
+			'''
+	}
+
+	GoliathBlade: {
+		DisplayName: Hulking Obsidian Blade
+		Tooltip:
+			'''
+			An obsidian blade, sharper than expected.
+			Seems to be part of a greater whole...
+			'''
+	}
+
+	Bobby: {
+		DisplayName: Bobby
+		Tooltip: You shouldn't have this...
+	}
+
+	_comment: Metallurgy
+
+	Tempering_Station: {
+		DisplayName: Tempering Station
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			Some alloys are weak when theyre forged. By tempering them, you can make them stronger without chainging their composition.
+			'''
+	}
+
+	Crucible: {
+		DisplayName: Crucible
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			There are some jobs a furnace just can't do.
+			'''
+	}
+
+	Fire: {
+		DisplayName: Fire
+		Tooltip: ""
+	}
+
+	AluminumOre: {
+		DisplayName: Aluminum Ore
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			Light, sturdy, and abundant!
+			'''
+	}
+
+	BerylliumOre: {
+		DisplayName: Beryllium Ore
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			Oxidizes quickly and bonds with metals readily.
+			'''
+	}
+
+	Carbon: {
+		DisplayName: Carbon
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			It leaves soot on your gloves...
+			'''
+	}
+
+	ManganeseOre: {
+		DisplayName: Manganese Ore
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			Highly Reactive in its pure state. Keep this away from water!
+			(I'm too lazy to code a whole explosion when it hits water.)
+			'''
+	}
+
+	NickelOre: {
+		DisplayName: Nickel Ore
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			Very hard, with a high melting point.
+			'''
+	}
+
+	Phosphorite: {
+		DisplayName: Phosphorite
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			Somewhat useless, if not dangerous, in this state.
+			'''
+	}
+
+	ZincOre: {
+		DisplayName: Zinc Ore
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			Doest rust, but does oxidize!
+			'''
+	}
+
+	AluminumBronze: {
+		DisplayName: Aluminum Bronze
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			All-Purpose metal. Recommended for simple things like axe heads.
+			'''
+	}
+
+	BerylliumCopper: {
+		DisplayName: Beryllium Copper
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			Great for handling pressure force and has a low melting point, allowing it to be welded easily!
+			'''
+	}
+
+	CartridgeBrass: {
+		DisplayName: Cartridge Brass
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			Light, and retains some level of strength when rolled thin. Good for bullet cartridges and radiators.
+			'''
+	}
+
+	CuproNickel: {
+		DisplayName: Cupro Nickel
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			All-Purpose metal. Recommended for simple, sturdy things such as pipes, claymores, and hammers.
+			'''
+	}
+
+	GermanSilver: {
+		DisplayName: German Silver
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			All-Purpose metal. Remarkably cheap and can be used for either light or heavy tools.
+			Also has Applications in Jewelery making!
+			'''
+	}
+
+	GildingMetal: {
+		DisplayName: Gilding Metal
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			All-Purpose metal. Good for bullet cartridges in conjunction with Cartridge Brass.
+			'''
+	}
+
+	Gunmetal: {
+		DisplayName: Gunmetal
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			All-Purpose metal. Resistant to corrosion even after extended use.
+			'''
+	}
+
+	ManganeseBronze: {
+		DisplayName: Manganese Bronze
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			All-Purpose metal. Not much of note here.
+			'''
+	}
+
+	MuntzMetal: {
+		DisplayName: Muntz Metal
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			Useful for stopping organic life from attatching to your tools.
+			'''
+	}
+
+	NavalBrass: {
+		DisplayName: Naval Brass
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			All-Purpose metal. Resistant to Corrosion.
+			'''
+	}
+
+	PhosphorBronze: {
+		DisplayName: Phosphor Bronze
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			All-Purpose metal. Recommended for simple, sturdy things.
+			'''
+	}
+
+	ColdSnapSteel: {
+		DisplayName: Coldsnap Steel
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			The bar is ice cold no matter what you do to it, making it causally harder to forge with.
+			'''
+	}
+
+	Steel: {
+		DisplayName: Steel
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			A common, sturdy alloy of abundant materials. Good for a wide variety of applications!
+			'''
+	}
+
+	ManganeseBlade: {
+		DisplayName: Manganese Blade
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			A simple claymore.
+			'''
+	}
+
+	CunifeBlade: {
+		DisplayName: Cunife Blade
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			A simple claymore.
+			'''
+	}
+
+	BabylonianPlates: {
+		DisplayName: Babylonian Plates
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			Oriental plates used to adorn tangs.
+			'''
+	}
+
+	SturdyTang: {
+		DisplayName: Sturdy Tang
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			A tang for certain swords.
+			'''
+	}
+
+	CappedTang: {
+		DisplayName: Capped Tang
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			A tang for certain swords.
+			'''
+	}
+
+	HornedTang: {
+		DisplayName: Horned Tang
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			A tang for certain swords.
+			'''
+	}
+
+	SapphireTang: {
+		DisplayName: Sapphire Tang
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			A tang for certain swords.
+			'''
+	}
+
+	SpikeCappedTang: {
+		DisplayName: Spike Capped Tang
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			A tang for certain swords.
+			'''
+	}
+
+	CappedMold: {
+		DisplayName: Capped Mold
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			A tang for certain swords.
+			'''
+	}
+
+	ClassicMold: {
+		DisplayName: Classic Mold
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			A tang for certain swords.
+			'''
+	}
+
+	DMold: {
+		DisplayName: D Mold
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			A tang for certain swords.
+			'''
+	}
+
+	HornedMold: {
+		DisplayName: Horned Mold
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			A tang for certain swords.
+			'''
+	}
+
+	SpikeCappedMold: {
+		DisplayName: Spike Capped Mold
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			A tang for certain swords.
+			'''
+	}
+
+	ReinforcedCompoundBow: {
+		DisplayName: Reinforced Compound Bow
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			A simple compound bow.
+			'''
+	}
+
+	IOU: {
+		DisplayName: I O U
+		Tooltip: Hello! This content has not been added yet! Stay tuned, as it will arrive soon!
+	}
+
+	SoulEdge: {
+		DisplayName: Soul Edge
+		Tooltip: A powerful sword, akin to a chisel, that is forged from the wills of many dead warriors.
+	}
+
+	BiCape: {
+		DisplayName: Bi Cape
+		Tooltip:
+			'''
+			Celebrate your identity with a cool cape!
+			You want other ones? Uhh idk download TPrideMod or somethin cuz ts was a pain to sprite manually.
+			'''
+	}
+
+	PartySword: {
+		DisplayName: Party Sword
+		Tooltip: ""
+	}
+
+	CunifeWire: {
+		Tooltip:
+			'''
+			Part of the Metallurgy System.
+			Cunife that has been stretched into a sturdy cable. It is most useful in this form if not tempered.
+			'''
+		DisplayName: Cunife Wire
+	}
+
+	RegalTang: {
+		DisplayName: Regal Tang
+		Tooltip:
+			'''
+			A very elegant tang made with expensive fabric.
+			It seems to be part of a greater whole.
+			'''
+	}
+
+	Laevateinn: {
+		DisplayName: Lævateinn
+		Tooltip: A light, aerodynamic blade used by the trickster themself, Loki.
+	}
+
+	TrueLaevateinn: {
+		DisplayName: True Lævateinn
+		Tooltip: Empowered with Coldsnap Steel, this blade can rend even mighty foes in a pinch.
+	}
+
+	Gargantua: {
+		DisplayName: Gargantua
+		Tooltip:
+			'''
+			A jewel atop the crown. A sword blending sultry red flames with a tempered obsidian blade, yet still held by a familiar hilt.
+			Swinging 5 times summons homing stars, 15 times spawns groups of Goliath Phantoms that shoot towards enemies after a short delay.
+			Swinging 30 times will empower Gargantua, but beware, if you change items while the boost is active, you will be inflicted with severe damage.
+			'''
+	}
+
+	Horizon: {
+		Tooltip: ""
+		DisplayName: Horizon
+	}
+
+	TrueSoulEdge: {
+		DisplayName: True Soul Edge
+		Tooltip: A fearsome brand, less holding and now utilizing the souls of the unfortunate.
+	}
+
+	Extruder: {
+		DisplayName: Extruder
+		Tooltip: A machine comprised of two wheels. Used to... well, extrude things!
+	}
+
+	UnholySteel: {
+		DisplayName: Unholy Steel
+		Tooltip: Steel infused with the essence of corruption.
+	}
+
+	CursedScabbard: {
+		DisplayName: Cursed Scabbard
+		Tooltip: ""
+	}
+
+	LivingDiamond: {
+		DisplayName: Living Diamond
+		Tooltip: A colorful gemstone that never seems to settle on one luminance for too long.
+	}
+
+	TemperedObsidian: {
+		DisplayName: Tempered Obsidian
+		Tooltip: Obsidian that has been heated and cooled near the brink of breakage, and then melted again to cool back into this stable form.
+	}
+
+	SteelClaymore: {
+		Tooltip: A simple claymore.
+		DisplayName: Steel Claymore
+	}
+
+	LimusPetItem: {
+		DisplayName: Slimy Hoodie
+		Tooltip:
+			'''
+			Conains 8% pure mercury!
+			Pet version of Limus the Slime.
+			'''
+	}
+
+	Icemourne: {
+		DisplayName: Icemourne
+		Tooltip:
+			'''
+			When Re-Logic don't got the balls to add it, you gotta do it yourself.
+			Sprite is Property of Re-Logic.
+			'''
+	}
+
+	Tenebris: {
+		DisplayName: Tenebris
+		Tooltip:
+			'''
+			A heavy ingot of darkness with flickering stars swimming inside.
+			You have eclipsed the Sun.
+			'''
+	}
+
+	ShimmeringSludge: {
+		DisplayName: Shimmering Sludge
+		Tooltip: Sticky, Dark, and makes your hand tingle.
+	}
+
+	RouletteTokenItem: {
+		Tooltip: ""
+		DisplayName: Roulette Token Item
+	}
+
+	CombatRoulette: {
+		Tooltip: Modulos your Base DMG by the amount of Roulette Tokens you have. Consumes one roulette token upon use.
+		DisplayName: Combat Roulette
+	}
+
+	Shadowflame: {
+		Tooltip: It crackles and flickers with a sickening Lavender color.
+		DisplayName: Shadowflame
+	}
+
+	DemigodHood: {
+		Tooltip:
+			'''
+			Walk as a God amongst men. You sort-of are.
+			Reacts to the presense of a certain blade...
+			'''
+		DisplayName: Demigod Hood
+	}
+
+	DemigodChestPlate: {
+		Tooltip:
+			'''
+			Walk as a God amongst men. You sort-of are.
+			Reacts to the presense of a certain blade...
+			'''
+		DisplayName: Demigod Chest Plate
+	}
+
+	DemigodBoots: {
+		Tooltip:
+			'''
+			Walk as a God amongst men. You sort-of are.
+			Reacts to the presense of a certain blade...
+			'''
+		DisplayName: Demigod Boots
+	}
+
+	DemigodWings: {
+		Tooltip: Soar as a god amongst men.
+		DisplayName: Demigod Wings
+	}
+
+	Tenebrous_Katana: {
+		DisplayName: Tenebrous Katana
+		Tooltip:
+			'''
+			Instead of warm, electrified metal, the plates are so incredibly cold that your hands prickle and freeze if you hold it for too long.
+			Each swing, empowered by a torrent of stars, creates a [cosmetic] boom across the screen.
+			'''
+	}
+
+	HeliciteGreatbow: {
+		Tooltip:
+			'''
+			"But Odysseus, when he had taken it up and examined it all over, strung it as easily as a skilled bard strings a new peg of his lyre and makes the twisted gut fast at both ends.
+			Then he took it in his right hand to prove the string, and it sang sweetly under his touch like the twittering of a swallow." -Homer's Odyssey
+			A legendary bow, now infused with vigor from the shards of the sun.
+			'''
+		DisplayName: Helicite Greatbow
+	}
+
+	SaplingItem: {
+		DisplayName: Sapling Item
+		Tooltip: ""
+	}
+
+	ContenderBodyArmor: {
+		DisplayName: Contender Body Armor
+		Tooltip:
+			'''
+			Standard Issue. Calibrated as the ultimate armor to slaughter even the toughest illusions of mind and matter. 
+			The hinderences of weaker armor cannot interfere with the games.
+			'''
+	}
+
+	ContenderGreaves: {
+		DisplayName: Contender Greaves
+		Tooltip:
+			'''
+			Standard Issue. Calibrated as the ultimate armor to slaughter even the toughest illusions of mind and matter. 
+			The hinderences of weaker armor cannot interfere with the games.
+			'''
+	}
+
+	Fracture: {
+		Tooltip: ""
+		DisplayName: Fracture
+	}
+
+	BarrierLatticeItem: {
+		Tooltip: ""
+		DisplayName: Barrier Lattice Item
+	}
+
+	BarrierLatticeItemL: {
+		DisplayName: Barrier Lattice Item L
+		Tooltip: ""
+	}
+
+	BarrierLatticeItemR: {
+		DisplayName: Barrier Lattice Item R
+		Tooltip: ""
+	}
+
+	DamascusRipper: {
+		DisplayName: Damascus Ripper
+		Tooltip: Absolutely Banger.
+	}
+
+	TemperedSteel: {
+		Tooltip: ""
+		DisplayName: Tempered Steel
+	}
+
+	TemperedCunife: {
+		Tooltip: ""
+		DisplayName: Tempered Cunife
+	}
+
+	TemperedBerylliumCopper: {
+		Tooltip: ""
+		DisplayName: Tempered Beryllium Copper
+	}
+
+	DamascusSteel: {
+		Tooltip: ""
+		DisplayName: Damascus Steel
+	}
+
+	ExoticAlloy: {
+		Tooltip: ""
+		DisplayName: Exotic Alloy
+	}
+
+	SteelPickaxe: {
+		Tooltip: ""
+		DisplayName: Steel Pickaxe
+	}
+
+	PhosphorBronzePickaxe: {
+		Tooltip: ""
+		DisplayName: Phosphor Bronze Pickaxe
+	}
+
+	NavalBrassPickaxe: {
+		Tooltip: ""
+		DisplayName: Naval Brass Pickaxe
+	}
+
+	CuproNickelPickaxe: {
+		Tooltip: ""
+		DisplayName: Cupro Nickel Pickaxe
+	}
+
+	SteelHammer: {
+		Tooltip: ""
+		DisplayName: Steel Hammer
+	}
+
+	PhosphorBronzeHammer: {
+		Tooltip: ""
+		DisplayName: Phosphor Bronze Hammer
+	}
+
+	NavalBrassHammer: {
+		Tooltip: ""
+		DisplayName: Naval Brass Hammer
+	}
+
+	CuproNickelHammer: {
+		Tooltip: ""
+		DisplayName: Cupro Nickel Hammer
+	}
+
+	SteelCleaver: {
+		Tooltip: ""
+		DisplayName: Steel Cleaver
+	}
+
+	RiftTome2: {
+		DisplayName: Shadow
+		Tooltip: Causes an orb of living shadows to coalesce and orbit around your cusror.
+	}
+
+	RiftTome: {
+		DisplayName: Rift Dart
+		Tooltip: Summons a barrage of Rift Darts to rain down from the sky.
+	}
+
+	RiftScabbard: {
+		DisplayName: Rift Scabbard
+		Tooltip: Summons a riften broadsword overloaded with the energies of the rift. It is almost sentient.
+	}
+
+	NightbringerDuo: {
+		Tooltip: Face the Fury of Dusk and Dawn!
+		DisplayName: Nightbringer Duo
+	}
+
+	DisabilityDraught: {
+		DisplayName: Disability Draught
+		Tooltip: ""
+	}
+
+	SpecialTownMusicBoxNight: {
+		Tooltip: ""
+		DisplayName: Special Town Music Box Night
+	}
+
+	SpecialTownMusicBoxDay: {
+		Tooltip: ""
+		DisplayName: Special Town Music Box Day
+	}
+
+	GildedCross: {
+		DisplayName: Gilded Cross
+		Tooltip: ""
+	}
+
+	DefloweredFaith: {
+		DisplayName: Deflowered Faith
+		Tooltip: Holding this makes you feel as though something is fundamentally wrong with you.
+	}
+
+	ScarletDragon: {
+		DisplayName: Scarlet Dragon
+		Tooltip: ""
+	}
+
+	WretchedSteel: {
+		DisplayName: Wretched Steel
+		Tooltip: ""
+	}
+
+	IchorDisruptor: {
+		DisplayName: Ichor Disruptor
+		Tooltip: ""
+	}
+
+	RiftThrowingKnife: {
+		Tooltip: ""
+		DisplayName: Rift Throwing Knife
+	}
+
+	RiftTeardrop: {
+		Tooltip: ""
+		DisplayName: Rift Teardrop
+	}
+
+	RiftSpine: {
+		Tooltip: ""
+		DisplayName: Rift Spine
+	}
+
+	ArmoryDrive: {
+		DisplayName: Armory Drive
+		Tooltip: ""
+	}
+
+	FurnitureDrive: {
+		DisplayName: Furniture Drive
+		Tooltip: ""
+	}
+
+	RiftConfigurator: {
+		DisplayName: Rift Configurator
+		Tooltip: ""
+	}
+
+	ToolDrive: {
+		DisplayName: Tool Drive
+		Tooltip: ""
+	}
+
+	WeaponryDrive: {
+		DisplayName: Weaponry Drive
+		Tooltip: ""
+	}
+
+	RiftYoyoT3: {
+		Tooltip: Has a random chance each tick to fire Rift darts at your enemy
+		DisplayName: Rift Assassin's Trusted Friend
+	}
+
+	RiftYoyoT2: {
+		Tooltip: ""
+		DisplayName: Rift Reaper MK.II
+	}
+
+	RiftYoyoT1: {
+		Tooltip: ""
+		DisplayName: Rift Reaper
+	}
+
+	RiftLamp: {
+		DisplayName: Rift Lamp
+		Tooltip: ""
+	}
+
+	RiftWallMonitor: {
+		Tooltip: ""
+		DisplayName: Rift Wall Monitor
+	}
+
+	HeliciteBrick: {
+		DisplayName: Helicite Brick
+		Tooltip: ""
+	}
+
+	RiftSurfaceMusicBox: {
+		Tooltip: ""
+		DisplayName: Rift Surface Music Box
+	}
+
+	RiftSandstormMusicBox: {
+		Tooltip: ""
+		DisplayName: Rift Sandstorm Music Box
+	}
+
+	RiftDesertMusicBox: {
+		Tooltip: ""
+		DisplayName: Rift Desert Music Box
+	}
+
+	UpDownSwingSwordItem: {
+		Tooltip: ""
+		DisplayName: Up Down Swing Sword Item
+	}
+
+	BewitchingScepter: {
+		Tooltip: For when you want to use an ensemble, but dont want to go through the hassle of increasing your minion slots with accessories. Increments minion slots by one each use.
+		DisplayName: (CHEAT ITEM) Bewitching Scepter
+	}
+
+	Lasergun: {
+		DisplayName: Lasergun
+		Tooltip: ""
+	}
+
+	RiftRailgun: {
+		Tooltip: Charges up and fires a deadly stream of solar energy
+		DisplayName: Rift Railgun
+	}
+
+	EnchantedScepter: {
+		DisplayName: Enchanted Scepter
+		Tooltip:
+			'''
+			An elegant scepter, fit for a prince or princess.
+			Left click to shoot homing magic darts, Right click to throw the scepter.
+			'''
+	}
+
+	WhackAMole_Master_Painting: {
+		Tooltip: A commemorative painting. Artist unknown.
+		DisplayName: Whack-a-mole Master!
+	}
+
+	MageGlove: {
+		Tooltip:
+			'''
+			A rugged, reliable glove.
+			Increases Scepter Class attack speed by 5%.
+			Increases Scepter Class Damage by 10%
+			'''
+		DisplayName: Mage Glove
+	}
+
+	ScepterAchievementBag: {
+		Tooltip: ""
+		DisplayName: Reward Bag (Whack-a-Mole Master!)
+	}
+
+	AchievementBook: {
+		Tooltip: ""
+		DisplayName: Achievement Book
+	}
+
+	AchievementUndoer: {
+		Tooltip: Flags all achievements as false, allowing you to reclaim them in the same world.
+		DisplayName: (DEBUG) Achievement Undoer
+	}
+
+	ShadowScepter: {
+		Tooltip:
+			'''
+			A dreadful scepter, wielded by unruly mages.
+			Left click to shoot homing shadowflame darts, Right click to throw the scepter.
+			'''
+		DisplayName: Shadow Scepter
+	}
+
+	NatureScepter: {
+		DisplayName: Nature Scepter
+		Tooltip:
+			'''
+			A wild scepter with all the lustre of a verdant emerald, and all the potency of the Jungle.
+			Left click to shoot homing dendro darts, Right click to throw the scepter, which will release spores in its path.
+			'''
+	}
+
+	NecroScepter: {
+		DisplayName: Necro Scepter
+		Tooltip:
+			'''
+			A rudimentary, ugly construct, the amalgamation of scavenged remains.
+			Left click to shoot homing posessed bones, Right click to throw the scepter, which will lock enemies in a bony prison for a short time on hit.
+			'''
+	}
+
+	ObsidianOculus: {
+		DisplayName: Obsidian Oculus
+		Tooltip:
+			'''
+			A watchful scepter, emanating unease.
+			Left click to shoot shards of obsidian; sharp as a razor, Right click to throw the scepter.
+			'''
+	}
+
+	ScepterOfVespae: {
+		DisplayName: Scepter Of Vespae
+		Tooltip:
+			'''
+			A potent scepter, with all the confidence of the jungle's matriarch.
+			Left click to shoot stingers and bees, Right click to throw the scepter, which releases bees as it travels.
+			'''
+	}
+
+	WondersWill: {
+		Tooltip:
+			'''
+			A dual scepter, two that work in tandem and cannot be separated.
+			Left click to shoot homing magic darts, Right click to throw the scepters in opposite directions.
+			'''
+		DisplayName: Wonders Will
+	}
+
+	HolyScepter: {
+		Tooltip:
+			'''
+			A blessed scepter, with a lustrous red gemstone atop, fit for a high officiant.
+			Left click to shoot homing power orbs, Right click to throw the scepter; which puts enemies into a power trade.
+			'''
+		DisplayName: Holy Scepter
+	}
+
+	RiftArmChair_Item: {
+		DisplayName: Rift Arm Chair
+		Tooltip: ""
+	}
+
+	RiftDoor: {
+		DisplayName: Rift Door
+		Tooltip: ""
+	}
+
+	ParticleSpawnWand: {
+		DisplayName: Particle Spawn Wand
+		Tooltip: ""
+	}
+
+	GoldPearl: {
+		DisplayName: Gold Pearl
+		Tooltip: It gleams in a way that never fails to spark wonder in your soul...
+	}
+
+	RiftChakram: {
+		DisplayName: Rift Chakram
+		Tooltip: ""
+	}
+
+	RiftRevolver: {
+		Tooltip: ""
+		DisplayName: Rift Revolver
+	}
+
+	TenebrousArchmageHat: {
+		Tooltip: ""
+		DisplayName: Tenebrous Archmage Hat
+	}
+
+	TenebrousArchmagePants: {
+		DisplayName: Tenebrous Archmage Pants
+		Tooltip: ""
+	}
+
+	TenebrousArchmageVest: {
+		DisplayName: Tenebrous Archmage Vest
+		Tooltip: ""
+	}
+
+	ManaCore: {
+		DisplayName: Mana Core
+		Tooltip: A fortefied Mana Star that grants the ability to do a Mana Burst, which consumes all mana and multiplies your mana by the scepter's Damage.
+	}
+
+	RiftScythe: {
+		DisplayName: Rift Scythe
+		Tooltip: ""
+	}
+
+	RiftStaff: {
+		DisplayName: Rift Staff
+		Tooltip: ""
+	}
+
+	RiftPhasesaber: {
+		Tooltip: ""
+		DisplayName: Rift Phasesaber
+	}
+
+	RiftZapinator: {
+		Tooltip: ""
+		DisplayName: Rift Zapinator
+	}
+
+	ContenderSword: {
+		Tooltip:
+			'''
+			Standard Issue. Calibrated as an ultimate sword to slaughter even the toughest illusions of mind and matter. 
+			The hinderences of weaker swords cannot interfere with the games.
+			'''
+		DisplayName: Contender Sword
+	}
+
+	RiftConfiguratorCore: {
+		DisplayName: Rift Configurator Core
+		Tooltip:
+			'''
+			The main component of the Rift Configurator. Drives can be inserted inside to unlock different recipes.
+			Only three drives can be inserted at a time.
+			Used for specific Crafting.
+			'''
+	}
+
+	RosyGlove: {
+		Tooltip:
+			'''
+			Elegant, Sleek, and Velvet. Ironic of a choice for bloody combat, but even royals let loose now and then.
+			Increases Scepter Class Damage by 3%
+			'''
+		DisplayName: Rosy Glove
+	}
+
+	CoralScepter: {
+		Tooltip:
+			'''
+			A seaborne Scepter with a comforting blue aura.
+			Left Click to shoot water darts that make enemies soggy on hit. Right click to throw the scepter.
+			'''
+		DisplayName: Coral Scepter
+	}
+
+	ChlorophyteGlove: {
+		Tooltip:
+			'''
+			Vibrant, Sharp, and pulsing with the vigor of triumphance.
+			Increases Scepter Class Speed by 5%
+			Increases Scepter Class Damage by 10%
+			Increases Scepter Throw Range by 16
+			'''
+		DisplayName: Chlorophyte Glove
+	}
+
+	OrichalcumVisage: {
+		Tooltip: Increases Mana Burst power by 2
+		DisplayName: Orichalcum Visage
+	}
+
+	MythrilVisage: {
+		Tooltip: Increases Mana Burst power by 2
+		DisplayName: Mythril Visage
+	}
+
+	LivingWoodCrown: {
+		Tooltip: ""
+		DisplayName: Living Wood Crown
+	}
+
+	ElementalAlkahest: {
+		Tooltip: ""
+		DisplayName: Elemental Alkahest
+	}
+
+	NephilimWings: {
+		Tooltip: Soar like a god amongst men.
+		DisplayName: Nephilim Wings
+	}
+
+	NephilimHood: {
+		Tooltip:
+			'''
+			You walk amongst men as if you are a god, though you merely pretend.
+			Reacts to the presence of a certain blade...
+			'''
+		DisplayName: Nephilim Hood
+	}
+
+	NephilimChestPlate: {
+		Tooltip:
+			'''
+			You walk amongst men as if you are a god, though you merely pretend.
+			Reacts to the presence of a certain blade...
+			'''
+		DisplayName: Nephilim Chest Plate
+	}
+
+	NephilimBoots: {
+		Tooltip:
+			'''
+			You walk amongst men as if you are a god, though you merely pretend.
+			Reacts to the presence of a certain blade...
+			'''
+		DisplayName: Nephilim Boots
+	}
+
+	SaviorWings: {
+		Tooltip: Great for launching ambushes on your foes...
+		DisplayName: Savior Wings
+	}
+
+	SaviorPlatemail: {
+		Tooltip:
+			'''
+			All eyes are on you. You are no longer the lazy emperor, but the brutal conquistador.
+			Reacts to the presence of a certain blade...
+			'''
+		DisplayName: Savior Platemail
+	}
+
+	SaviorHelmet: {
+		Tooltip:
+			'''
+			All eyes are on you. You are no longer the lazy emperor, but the brutal conquistador.
+			Reacts to the presence of a certain blade...
+			'''
+		DisplayName: Savior Helmet
+	}
+
+	SaviorGreaves: {
+		Tooltip:
+			'''
+			All eyes are on you. You are no longer the lazy emperor, but the brutal conquistador.
+			Reacts to the presence of a certain blade...
+			'''
+		DisplayName: Savior Greaves
+	}
+
+	RiftData: {
+		DisplayName: Rift Data Card
+		Tooltip: A small card with special data burned onto it. It is necessary to direct Riften Energy along wire paths.
+	}
+
+	ShadowCircuitry: {
+		DisplayName: Shadow Circuitry
+		Tooltip: A glass wafer with channels carved into it. Inlaid in those channels are Riftplate Wires, which conduct living shadows through a circuit.
+	}
+
+	Motherboard: {
+		DisplayName: Motherboard
+		Tooltip: A glass wafer with copper wire inlaid in it. This is far to intricate for you to even understand how to craft.
+	}
+
+	RiftplateWire: {
+		DisplayName: Riftplate Wire
+		Tooltip: Riftplate that has been stretched out into a high-tension wire. Stimulating this may create interesting results.
+	}
+
+	TenebrousArchmageCoat: {
+		Tooltip: ""
+		DisplayName: Tenebrous Archmage Coat
+	}
+
+	TenebrousTanDye: {
+		Tooltip: ""
+		DisplayName: Tenebrous Tan Dye
+	}
+
+	TenebrousMagentaDye: {
+		Tooltip: ""
+		DisplayName: Tenebrous Magenta Dye
+	}
+
+	TenebrousBlueDye: {
+		Tooltip: ""
+		DisplayName: Tenebrous Blue Dye
+	}
+
+	ScepterPolish: {
+		Tooltip: ""
+		DisplayName: Scepter Polish
+	}
+
+	BloodVial: {
+		Tooltip: ""
+		DisplayName: Blood Vial
+	}
+
+	VileCyst: {
+		DisplayName: Vile Cyst
+		Tooltip: ""
+	}
+
+	Item_RiftConfiguratorCore: {
+		DisplayName: Rift Configurator Core
+		Tooltip:
+			'''
+			A specialized Crafting Unit for Living Shadows. It works a little differently from the Rift Crucible.
+			It uses advanced Circuitry to pull information from data cards and uses that data to direct Living Shadows at certain frequencies into Riftplate to create activatable items.
+			To unlock the recipes for certain item groups, you need the corresponding drive to be inserted, which is done by holding the drive in your hand and right clicking this item in the inventory.
+			Right click a second time to remove the drive.
+			Only one drive can be inserted at a time.
+			CURRENT DRIVE: NONE
+			'''
+	}
+
+	Item_RiftConfiguratorArmory: {
+		DisplayName: Rift Configurator Armory
+		Tooltip:
+			'''
+			A specialized Crafting Unit for Living Shadows. It works a little differently from the Rift Crucible.
+			It uses advanced Circuitry to pull information from data cards and uses that data to direct Living Shadows at certain frequencies into Riftplate to create activatable items.
+			To unlock the recipes for certain item groups, you need the corresponding drive to be inserted, which is done by holding the drive in your hand and right clicking this item in the inventory.
+			Right click a second time to remove the drive.
+			Only one drive can be inserted at a time.
+			CURRENT DRIVE: ARMORY
+			'''
+	}
+
+	Item_RiftConfiguratorWeaponry: {
+		DisplayName: Rift Configurator Weaponry
+		Tooltip:
+			'''
+			A specialized Crafting Unit for Living Shadows. It works a little differently from the Rift Crucible.
+			It uses advanced Circuitry to pull information from data cards and uses that data to direct Living Shadows at certain frequencies into Riftplate to create activatable items.
+			To unlock the recipes for certain item groups, you need the corresponding drive to be inserted, which is done by holding the drive in your hand and right clicking this item in the inventory.
+			Right click a second time to remove the drive.
+			Only one drive can be inserted at a time.
+			CURRENT DRIVE: WEAPONRY
+			'''
+	}
+
+	Item_RiftConfiguratorTools: {
+		DisplayName: Rift Configurator Tools
+		Tooltip:
+			'''
+			A specialized Crafting Unit for Living Shadows. It works a little differently from the Rift Crucible.
+			It uses advanced Circuitry to pull information from data cards and uses that data to direct Living Shadows at certain frequencies into Riftplate to create activatable items.
+			To unlock the recipes for certain item groups, you need the corresponding drive to be inserted, which is done by holding the drive in your hand and right clicking this item in the inventory.
+			Right click a second time to remove the drive.
+			Only one drive can be inserted at a time.
+			CURRENT DRIVE: TOOLS
+			'''
+	}
+
+	Item_RiftConfiguratorFurniture: {
+		DisplayName: Rift Configurator Furniture
+		Tooltip:
+			'''
+			A specialized Crafting Unit for Living Shadows. It works a little differently from the Rift Crucible.
+			It uses advanced Circuitry to pull information from data cards and uses that data to direct Living Shadows at certain frequencies into Riftplate to create activatable items.
+			To unlock the recipes for certain item groups, you need the corresponding drive to be inserted, which is done by holding the drive in your hand and right clicking this item in the inventory.
+			Right click a second time to remove the drive.
+			Only one drive can be inserted at a time.
+			CURRENT DRIVE: FURNITURE
+			'''
+	}
+
+	Item_RiftLamp: {
+		Tooltip: ""
+		DisplayName: Rift Lamp
+	}
+
+	Item_RiftDoor: {
+		Tooltip: ""
+		DisplayName: Rift Door
+	}
+
+	Item_RiftCrucible: {
+		Tooltip: ""
+		DisplayName: Rift Crucible
+	}
+
+	Item_RiftChair: {
+		Tooltip: ""
+		DisplayName: Rift Chair
+	}
+
+	Item_RiftCache: {
+		Tooltip: ""
+		DisplayName: Rift Cache
+	}
+
+	Item_RiftBookcase: {
+		Tooltip: ""
+		DisplayName: Rift Bookcase
+	}
+
+	Item_RiftArmChair: {
+		Tooltip: ""
+		DisplayName: Rift Arm Chair
+	}
+
+	Item_TemperedObsidian: {
+		Tooltip: ""
+		DisplayName: Tempered Obsidian
+	}
+
+	Item_SpecialTownMusicBoxNight: {
+		Tooltip: ""
+		DisplayName: Special Town Music Box Night
+	}
+
+	Item_SpecialTownMusicBoxDay: {
+		Tooltip: ""
+		DisplayName: Special Town Music Box Day
+	}
+
+	Item_HeliciteCrystal: {
+		Tooltip: ""
+		DisplayName: Helicite Crystal
+	}
+
+	Item_HeliciteBrick: {
+		Tooltip: ""
+		DisplayName: Helicite Brick
+	}
+
+	Item_GargoyleTrepidation: {
+		Tooltip: ""
+		DisplayName: Gargoyle Trepidation
+	}
+
+	Item_RiftWall: {
+		Tooltip: ""
+		DisplayName: Rift Wall
+	}
+
+	Item_RiftSurfaceMusicBox: {
+		Tooltip: ""
+		DisplayName: Rift Surface Music Box
+	}
+
+	Item_DangerousRiftWall: {
+		Tooltip: ""
+		DisplayName: Dangerous Rift Wall
+	}
+
+	Item_RiftSilt: {
+		Tooltip: ""
+		DisplayName: Rift Silt
+	}
+
+	Item_RiftSandstormMusicBox: {
+		Tooltip: ""
+		DisplayName: Rift Sandstorm Music Box
+	}
+
+	Item_RiftDesertMusicBox: {
+		Tooltip: ""
+		DisplayName: Rift Desert Music Box
+	}
+
+	Item_Riftpane: {
+		DisplayName: Riftpane
+		Tooltip: ""
+	}
+
+	Item_RiftpaneWall: {
+		DisplayName: Riftpane Wall
+		Tooltip: ""
+	}
+
+	Item_Riftplate: {
+		DisplayName: Riftplate
+		Tooltip: ""
+	}
+
+	Item_RiftplatePlatform: {
+		DisplayName: Riftplate Platform
+		Tooltip: ""
+	}
+
+	Item_RiftplateWall: {
+		DisplayName: Riftplate Wall
+		Tooltip: ""
+	}
+
+	Item_RiftTable: {
+		DisplayName: Rift Table
+		Tooltip: ""
+	}
+
+	Item_RiftWallMonitor: {
+		DisplayName: Rift Wall Monitor
+		Tooltip: ""
+	}
+
+	RiftBattery: {
+		DisplayName: Rift Battery
+		Tooltip: A small canister of living shadows with a special port at the end for another device to plug in to.
+	}
+
+	Husk_RiftBroadsword: {
+		DisplayName: Rift Broadsword Husk
+		Tooltip: A heavy, dead sword. It functions as intended in this state, but definitely feels underwhelming.
+	}
+
+	RiftElectrifier: {
+		DisplayName: Rift Electrifier
+		Tooltip:
+			'''
+			A wired apparatus designed to transfer the solar energy in living shadows into riftplate items as an electrical current, activating them for a short time.
+			Requires Rift Batteries or a close enough proximity to a Rift Crucible to obtain the solar energy.
+			Disclaimer: Helicite Crystals, Solar Fragments, and other sun-centric items do not work as a power source. Only Rift Batteries.
+			'''
+	}
+
+	Husk_RiftChakram: {
+		Tooltip: A heavy, dead chakram. It functions as intended in this state, but definitely feels underwhelming.
+		DisplayName: Rift Chakram Husk
+	}
+
+	Husk_RiftClaymore: {
+		DisplayName: Rift Claymore Husk
+		Tooltip: A heavy, dead sword. It functions as intended in this state, but definitely feels underwhelming.
+	}
+
+	Husk_RiftGreatsword: {
+		Tooltip: A heavy, dead sword. It functions as intended in this state, but definitely feels underwhelming.
+		DisplayName: Rift Greatsword Husk
+	}
+
+	HeliciteShank: {
+		Tooltip: A small, crystalline blade imbued with the Ancient Sun's essence.
+		DisplayName: Helicite Shank
+	}
+
+	Husk_RiftScabbard: {
+		Tooltip: A heavy, dead scabbard. It does nothing in this state.
+		DisplayName: Rift Scabbard Husk
+	}
+
+	Husk_RiftPhasesaber: {
+		DisplayName: Rift Phasesaber Hilt
+		Tooltip: A heavy, dead hunk of junk. It does nothing in this state.
+	}
+
+	Husk_RiftRevolver: {
+		DisplayName: Rift Revolver Husk
+		Tooltip: A heavy, dead gun. It does nothing in this state.
+	}
+
+	Husk_RiftScythe: {
+		DisplayName: Rift Scythe Husk
+		Tooltip: A heavy, dead scythe. It does nothing in this state.
+	}
+
+	Husk_RiftStaff: {
+		DisplayName: Rift Staff Husk
+		Tooltip: A heavy, dead scabbard. Even your arcane power cannot will this thing to life.
+	}
+
+	Husk_RiftThrowingKnife: {
+		DisplayName: Rift Throwing Knife Husk
+		Tooltip: A heavy, dead knife. If you tried throwing this, it probably wouldnt go very far.
+	}
+
+	Husk_RiftZapinator: {
+		DisplayName: Rift Zapinator Husk
+		Tooltip: A heavy, dead gun. Even your arcane power cannot will this thing to life.
+	}
+
+	AuraThiefBreastplate: {
+		DisplayName: Aura Thief Breastplate
+		Tooltip: A plate of thievery and dishonor. As pale as your eyes.
+	}
+
+	AuraThiefCuisses: {
+		DisplayName: Aura Thief Cuisses
+		Tooltip: Cuisses of thievery and dishonor. As pale as your eyes.
+	}
+
+	AuraThiefHeadgear: {
+		DisplayName: Aura Thief Headgear
+		Tooltip: Headgear of thievery and dishonor. As pale as your eyes.
+	}
+
+	PosessedPickaxe: {
+		Tooltip:
+			'''
+			A pickaxe belonging to an unfortunte miner, their body is likely stuck in some small crevice or split up by ravenous worms. 
+			One thing is for sure though. They are out for vengance against an old friend...
+			This minion will not actively chase your foes, but will light caves for you.
+			Perhaps if you can quell this unfortunte soul's grudge, they may offer you some extra help...
+			Maybe...
+			'''
+		DisplayName: Posessed Pickaxe
+	}
+
+	SparkFrostCleaver: {
+		Tooltip:
+			'''
+			A gargantuan cleaver of fire and ice energies.
+			This creation is not entiely worldly, though... The Spark-Frost Cleaver is a construct of the Haepien, an elemental sprite with special powers gifted to them by the heavens.
+			Swings travel in complete circles, and will automatically swing twice if held down.
+			Hitting an enemy creates an explosion and releases a flare of Flame and a flare of Frost that home in on enemies.
+			The flare of Flame inflicts Haepien's Inferno, an enhanced version of the "On Fire!" debuff.
+			Enemies caught within a certain range of ignited enemies will have the flames jump to them as well. 
+			The flare of Frost inflicts Haepien's Blizzard, an enhanced version of the "Frostburn" debuff.
+			Enemies afflicted with Haepien's Blizzard will be unable to move, fly, or fall.
+			'''
+		DisplayName: Spark Frost Cleaver
+	}
+
+	WrittenPromise: {
+		DisplayName: Written Promise
+		Tooltip:
+			'''
+			A handwritten note from the Prospector, addressed to a friend named "Elliott".
+
+			Hey Elliott...
+			So I know its been some time since we last met, and I bet that hasn't been very enjoyable time for you, all things considered...
+			Listen, I want to explain a few thi-
+			-ecause I was so cau-
+			-orry for ev-
+
+			The rest of the note is waterlogged from sitting in his pocket for so long, but the thought is there.
+			'''
+	}
+
+	AuraClaws: {
+		DisplayName: Aura Claws
+		Tooltip: The stolen dreams of the dead reap from you that which you pride yourself upon...
+	}
+
+	EvermoltenSteel: {
+		Tooltip: Steel that is soft as dough. Imbued with fire energy.
+		DisplayName: Evermolten Steel
+	}
+
+	CuproNickelJavelin: {
+		Tooltip: ""
+		DisplayName: Cupro Nickel Javelin
+	}
+
+	TenebrousArchmageCowl: {
+		DisplayName: Tenebrous Archmage Cowl
+		Tooltip: ""
+	}
+
+	TenebrousTradewinds: {
+		DisplayName: Tenebrous Tradewinds
+		Tooltip: ""
+	}
+
+	PhosphorBronzeJavelin: {
+		DisplayName: Phosphor Bronze Javelin
+		Tooltip: ""
+	}
+
+	SteelJavelin: {
+		Tooltip: ""
+		DisplayName: Steel Javelin
+	}
+
+	CunifeJavelin: {
+		Tooltip: ""
+		DisplayName: Cunife Javelin
+	}
+
+	LivingWoodCane: {
+		DisplayName: Living Wood Cane
+		Tooltip: ""
+	}
+
+	TitanScepter: {
+		DisplayName: Titan Scepter
+		Tooltip: ""
+	}
+
+	ChlorophyteScepter: {
+		DisplayName: Chlorophyte Scepter
+		Tooltip: ""
+	}
+
+	GhoulishScepter: {
+		Tooltip: ""
+		DisplayName: Ghoulish Scepter
+	}
+
+	RiftScepter: {
+		Tooltip: ""
+		DisplayName: Rift Scepter
+	}
+
+	Husk_RiftScepter: {
+		Tooltip: ""
+		DisplayName: Husk_ Rift Scepter
+	}
+
+	BroadswordData: {
+		DisplayName: Broadsword Data
+		Tooltip: ""
+	}
+
+	ClaymoreData: {
+		DisplayName: Claymore Data
+		Tooltip: ""
+	}
+
+	GreatSwordData: {
+		DisplayName: Great Sword Data
+		Tooltip: ""
+	}
+
+	MiscData: {
+		DisplayName: Misc Data
+		Tooltip: ""
+	}
+
+	RevolverData: {
+		DisplayName: Revolver Data
+		Tooltip: ""
+	}
+
+	ScepterData: {
+		DisplayName: Scepter Data
+		Tooltip: ""
+	}
+
+	StaffData: {
+		DisplayName: Staff Data
+		Tooltip: ""
+	}
+
+	YoyoData: {
+		DisplayName: Yoyo Data
+		Tooltip: ""
+	}
+
+	ZapinatorData: {
+		DisplayName: Zapinator Data
+		Tooltip: ""
+	}
+
+	CelestialDiscord: {
+		DisplayName: Celestial Discord
+		Tooltip: ""
+	}
+
+	ShimmeringBossResetter: {
+		DisplayName: Shimmering Boss Resetter
+		Tooltip: ""
+	}
+
+	Item_ConstitutionMusicBox: {
+		DisplayName: Constitution Music Box
+		Tooltip: ""
+	}
+
+	StellarTintedGoggles: {
+		Tooltip: ""
+		DisplayName: Stellar Tinted Goggles
+	}
+
+	ConstitutionLootBag: {
+		Tooltip: ""
+		DisplayName: Constitution Loot Bag
+	}
+
+	CursedStar: {
+		DisplayName: Cursed Star
+		Tooltip: ""
+	}
+
+	DebugStar: {
+		DisplayName: Debug Star
+		Tooltip: ""
+	}
+
+	FoxScepter: {
+		DisplayName: Fox Scepter
+		Tooltip: ""
+	}
+
+	StellarFoxScepter: {
+		DisplayName: Stellar Fox Scepter
+		Tooltip: ""
+	}
+
+	StellarBow: {
+		Tooltip: ""
+		DisplayName: Stellar Bow
+	}
+
+	StellarFlames: {
+		DisplayName: Stellar Flames
+		Tooltip: ROMANTICIZE PAIN AND YOU WILL FIND YOURSELF CONSUMED.
+	}
+
+	Endemy2Weapon: {
+		Tooltip:
+			'''
+			A behemoth by many metrics. Supposedly capable of rending planets in a single swing, but it seems like it doesn't want to do that when it's you who wields it.
+			[This weapon design is an Intellectual Property of Desolo Zantas. It is used with their consent on the condition that explicit credit is given to them.]
+			'''
+		DisplayName: Second Endemy's Wrath
+	}
+
+	Item_ConstitutionRelic: {
+		DisplayName: Constitution Relic
+		Tooltip: ""
+	}
+
+	Item_ConstitutionTrophy: {
+		DisplayName: Constitution Trophy
+		Tooltip: ""
+	}
+
+	AetherAngel: {
+		DisplayName: Aether Angel
+		Tooltip: ""
+	}
+
+	BrilliantStar: {
+		DisplayName: Brilliant Star
+		Tooltip: ""
+	}
+
+	Carnage: {
+		DisplayName: Carnage
+		Tooltip: ""
+	}
+
+	EternalAbyss: {
+		DisplayName: Eternal Abyss
+		Tooltip: ""
+	}
+
+	OmegasEdge: {
+		DisplayName: Omegas Edge
+		Tooltip: ""
+	}
+
+	SunsetSavior: {
+		DisplayName: Sunset Savior
+		Tooltip: ""
+	}
+
+	ValiantDawn: {
+		DisplayName: Valiant Dawn
+		Tooltip: ""
+	}
+
+	WyvernsDestruction: {
+		DisplayName: Wyverns Destruction
+		Tooltip: Original Weapon from Ultraconyx
+	}
+
+	RibChainsaw: {
+		Tooltip: RIP AND TEAR. ITS BETTER FOR ME ANYWAY.
+		DisplayName: Rib Chainsaw
+	}
+
+	AntiqueCrown: {
+		DisplayName: Antique Crown
+		Tooltip: A wrought, heavy crown.
+	}
+
+	FleeceRobe: {
+		DisplayName: Fleece Robe
+		Tooltip: Quite Scratchy
+	}
+
+	InsurgentCirclet: {
+		DisplayName: Insurgent Circlet
+		Tooltip: ""
+	}
+
+	InsurgentBodyArmor: {
+		Tooltip: ""
+		DisplayName: Insurgent Body Armor
+	}
+
+	InsurgentFaulds: {
+		DisplayName: Insurgent Faulds
+		Tooltip: ""
+	}
+
+	GoodOmen: {
+		DisplayName: Good Omen
+		Tooltip: ""
+	}
+
+	CorruptPetalGun: {
+		DisplayName: Corrupt Petal Gun
+		Tooltip: Shoots out Corrupted Flower petals that have a chance to home in on an enemy.
+	}
+
+	TinyHammer: {
+		DisplayName: Tiny Hammer
+		Tooltip: ""
+	}
+
+	Contempt: {
+		Tooltip: Creates a corrupt Sigil at the cursor position. Cursed flames will fly towards the marker from all around.
+		DisplayName: Contempt
+	}
+
+	WyvernTail: {
+		DisplayName: Wyvern Tail
+		Tooltip: Hitting an enemy will heal you a random amount on random chance. Ichor will rain from the sky onto the enemy.
+	}
+
+	NightmareRoseLootBag: {
+		DisplayName: Nightmare Rose Loot Bag
+		Tooltip: ""
+	}
+
+	WyvernCorpseLootBag: {
+		DisplayName: Wyvern Corpse Loot Bag
+		Tooltip: ""
+	}
+
+	GreatFlayer: {
+		DisplayName: Great Flayer
+		Tooltip: Every third Swing is a spin, spraying ichor in all directions.
+	}
+
+	WyvernSkull: {
+		Tooltip: Allows you to dash and create a trail of Flesh Bombs that quickly explode into ichor, lowering your enemies' defense.
+		DisplayName: Wyvern Skull
+	}
+
+	DeadlyBlossom: {
+		DisplayName: Deadly Blossom
+		Tooltip: Allows you to spawn a small rose blossom at your position. Staying within a vicinity of the blossom will enhance life and mana regen greatly.
+	}
+
+	GigaCursedHammerWeapon: {
+		Tooltip: ""
+		DisplayName: Giga Cursed Hammer
+	}
+
+	EuthanizedViciousBunny: {
+		DisplayName: Euthanized Vicious Bunny
+		Tooltip: You are a horrible person.
+	}
+
+	Item_WyvernCorpseTrophy: {
+		Tooltip: ""
+		DisplayName: Wyvern Corpse Trophy
+	}
+
+	Item_WyvernCorpseRelic: {
+		Tooltip: ""
+		DisplayName: Wyvern Corpse Relic
+	}
+
+	Item_NightmareRoseTrophy: {
+		Tooltip: ""
+		DisplayName: Nightmare Rose Trophy
+	}
+
+	Item_NightmareRoseRelic: {
+		Tooltip: ""
+		DisplayName: Nightmare Rose Relic
+	}
+
+	NightmarePowder: {
+		Tooltip: ""
+		DisplayName: Nightmare Powder
+	}
+
+	PossessedDartRifleItem: {
+		DisplayName: Possessed Dart Rifle
+		Tooltip:
+			'''
+			Summons a Possessed Dart Rifle that orbits you and shoots cursed darts at your foes.
+			Uses 10 Minion Slots
+			'''
+	}
+
+	WitheredBouqet: {
+		DisplayName: Withered Bouqet
+		Tooltip: ""
+	}
+
+	TenebrousDemonChausses: {
+		DisplayName: Tenebrous Demon Chausses
+		Tooltip: ""
+	}
+
+	TenebrousDemonChestplate: {
+		DisplayName: Tenebrous Demon Chestplate
+		Tooltip: ""
+	}
+
+	TenebrousDemonVisor: {
+		DisplayName: Tenebrous Demon Visor
+		Tooltip: ""
+	}
+
+	TenebrousChakram: {
+		DisplayName: Tenebrous Chakram
+		Tooltip: Summons homing stars as it travels.
+	}
+
+	TheBotanistsCurse: {
+		DisplayName: The Botanists Curse
+		Tooltip:
+			'''
+			A collection of horrible, gorey stories about various Botanists and Farmers supposedly afflicted by "The Botanists Curse"
+			Summons the Nightmare Rose
+			NOTE: The rose will spawn with the bottom center on the cursor, and will fall to any solid tile below.
+			'''
+	}
+
+	Corrolary: {
+		Tooltip: ""
+		DisplayName: Corrolary
+	}
+
+	Continuum: {
+		DisplayName: Continuum
+		Tooltip: ""
+	}
+
+	ButterflyofProvidence: {
+		DisplayName: Butterfly of Providence
+		Tooltip: ""
+	}
+
+	GenesisButterfly: {
+		Tooltip: ""
+		DisplayName: Genesis Butterfly
+	}
+
+	GalantineLance: {
+		DisplayName: Galantine Lance
+		Tooltip: ""
+	}
+
+	TemporalLance: {
+		DisplayName: Temporal Lance
+		Tooltip: ""
+	}
+
+	BookUIOpener: {
+		DisplayName: Book U I Opener
+		Tooltip: Debug Item
+	}
+
+	BloodGoddessLoreBook: {
+		DisplayName: Blood Goddess Lore Book
+		Tooltip: Debug Item
+	}
+
+	NightmareRoseArenaBook: {
+		DisplayName: Nightmare Rose Arena
+		Tooltip: Instructions on the setup of a premade arena for the nightmare rose.
+	}
+
+	LivingShadowLoreBook: {
+		DisplayName: Living Shadows
+		Tooltip: ""
+	}
+
+	ScholarAutobiography: {
+		DisplayName: Autobiography I
+		Tooltip: ""
+	}
+
+	Jnana: {
+		Tooltip: ""
+		DisplayName: Jnana
+	}
+
+	ShadeSeedBook: {
+		Tooltip: ""
+		DisplayName: Shade Seed Book
+	}
+
+	StarHammer: {
+		DisplayName: Star Hammer
+		Tooltip: ""
+	}
+
+	HoleCatTail: {
+		Tooltip:
+			'''
+			Are we not all still looking for our own reflection?
+			.
+			Great for Impersonating Devs!
+			'''
+		DisplayName: HoleCat's Tail
+	}
+
+	HoleCatSkirt: {
+		Tooltip:
+			'''
+			Are we not all still looking for our own reflection?
+			.
+			Great for Impersonating Devs!
+			'''
+		DisplayName: HoleCat's Skirt
+	}
+
+	HoleCatShawl: {
+		Tooltip:
+			'''
+			Are we not all still looking for our own reflection?
+			.
+			Great for Impersonating Devs!
+			'''
+		DisplayName: HoleCat's Shawl
+	}
+
+	HoleCatHood: {
+		Tooltip:
+			'''
+			Are we not all still looking for our own reflection?
+			.
+			Great for Impersonating Devs!
+			'''
+		DisplayName: HoleCat's Hood
+		SetBonus:
+			'''
+			25% Increased Damage across all classes.
+			5% Increased Use Speed.
+			10% Increased Knockback.
+			'''
+	}
+}
+
+Projectiles: {
+	CT3_Jab_Projectile.DisplayName: C T3_ Jab_ Projectile
+	CT3_Swing.DisplayName: C T3_ Swing
+	HellstoneWave.DisplayName: Hellstone Wave
+	LC_Jab_Projectile.DisplayName: L C_ Jab_ Projectile
+	LC_Slash.DisplayName: L C_ Slash
+	SoulOfLight_Projectile.DisplayName: Soul Of Light_ Projectile
+	SoulOfNight_Projectile.DisplayName: Soul Of Night_ Projectile
+	Chroma_Projectile.DisplayName: Chroma_ Projectile
+	P_Noctis_Projectile.DisplayName: P_ Noctis_ Projectile
+	Conclusion_Dash.DisplayName: Conclusion_ Dash
+	Conclusion_Slash.DisplayName: Conclusion_ Slash
+	Celestial_Star.DisplayName: Celestial_ Star
+	Rift_Bullet.DisplayName: Rift_ Bullet
+	Rift_Katana_Swing.DisplayName: Rift_ Katana_ Swing
+	Rift_Katana_Wave.DisplayName: Rift_ Katana_ Wave
+	RiftMaker_Thrown.DisplayName: Rift Maker_ Thrown
+	Copper_Shortsword.DisplayName: Copper_ Shortsword
+	HellstoneGlob.DisplayName: Hellstone Glob
+	MeteoriteGlob.DisplayName: Meteorite Glob
+	Lead_Shortsword.DisplayName: Lead_ Shortsword
+	Tin_Shortsword.DisplayName: Tin_ Shortsword
+	Blood_Butcherer.DisplayName: Blood_ Butcherer
+	Gold_Shortsword.DisplayName: Gold_ Shortsword
+	Iron_Shortsword.DisplayName: Iron_ Shortsword
+	Lights_Bane.DisplayName: Lights_ Bane
+	Platinum_Shortsword.DisplayName: Platinum_ Shortsword
+	Silver_Shortsword.DisplayName: Silver_ Shortsword
+	Tungsten_Shortsword.DisplayName: Tungsten_ Shortsword
+	CruiserMinionBody.DisplayName: Cruiser Minion Body
+	CruiserMinionHead.DisplayName: Cruiser Minion Head
+	CruiserMinionTail.DisplayName: Cruiser Minion Tail
+	PrecisionArrowProjectile.DisplayName: Precision Arrow Projectile
+	GoliathBeam.DisplayName: Goliath Beam
+	CT3_SE.DisplayName: C T3_ S E
+	Memoriam_Grave_Projectile.DisplayName: Memoriam_ Grave_ Projectile
+	RiftBall.DisplayName: Rift Ball
+	CruiserSausage.DisplayName: Cruiser Sausage
+	ConstantineScytheProjectile.DisplayName: Constantine Scythe Projectile
+	OverloadedRocket.DisplayName: Overloaded Rocket
+	TacticalArrowProjectile.DisplayName: Tactical Arrow Projectile
+	Hi_TechArrowProjectile.DisplayName: Hi_ Tech Arrow Projectile
+	FrigidHalberdJabProjectile.DisplayName: Frigid Halberd Jab Projectile
+	FrigidHalberdSwingProjectile.DisplayName: Frigid Halberd Swing Projectile
+	IceRope.DisplayName: Ice Rope
+	GlacialJabberJabProjectile.DisplayName: Glacial Jabber Jab Projectile
+	GlacialJabberSwingProjectile.DisplayName: Glacial Jabber Swing Projectile
+	WinterWonderlandSwingProjectile.DisplayName: Winter Wonderland Swing Projectile
+	WinterWonderlandJabProjectile.DisplayName: Winter Wonderland Jab Projectile
+	ConstantineBlob.DisplayName: Constantine Blob
+	RiftSiltBallFallingProjectile.DisplayName: Rift Silt Ball Falling Projectile
+	RiftSolutionProjectile.DisplayName: Rift Solution Projectile
+	RiftShivProjectile.DisplayName: Rift Shiv Projectile
+	BobbyProjectile.DisplayName: Bobby Projectile
+	ManganeseBladeSwing.DisplayName: Manganese Blade Swing
+	CunifeBladeSwing.DisplayName: Cunife Blade Swing
+	BowProjectile.DisplayName: Bow Projectile
+	SoulEdgeSwing.DisplayName: Soul Edge Swing
+	SoulEdgeProjection.DisplayName: Soul Edge Projection
+	PartyMeteor.DisplayName: Party Meteor
+	LaevateinnArc.DisplayName: Laevateinn Arc
+	TrueLaevateinnArc.DisplayName: True Laevateinn Arc
+	GargantuaBeam.DisplayName: Gargantua Beam
+	TrueSoulEdgeProjection.DisplayName: True Soul Edge Projection
+	TrueSoulEdgeStar.DisplayName: True Soul Edge Star
+	EyeSword.DisplayName: Eye Sword
+	SteelClaymoreSwing.DisplayName: Steel Claymore Swing
+	LesserFractalSwing.DisplayName: Lesser Fractal Swing
+	RiftWhipT1Projectile.DisplayName: Rift Whip T1 Projectile
+	RiftWhipT2Projectile.DisplayName: Rift Whip T2 Projectile
+	RiftGreatswordProjectile.DisplayName: Rift Greatsword Projectile
+	Conclusion_Shot.DisplayName: Conclusion_ Shot
+	LimusPet.DisplayName: Limus Pet
+	VanxarkSummon.DisplayName: Vanxark Summon
+	IcemourneBeam.DisplayName: Icemourne Beam
+	IcemourneWave.DisplayName: Icemourne Wave
+	RiftClaymoreProjectile.DisplayName: Rift Claymore Projectile
+	Tenebrous_Katana_Projectile.DisplayName: Tenebrous_ Katana_ Projectile
+	Tenebrous_Bullet.DisplayName: Tenebrous_ Bullet
+	RiftArrowProjectile.DisplayName: Rift Arrow Projectile
+	DamascusJab.DisplayName: Damascus Jab
+	DamascusSwing.DisplayName: Damascus Swing
+	Shadow.DisplayName: Shadow
+	RiftSwordMinion.DisplayName: Rift Sword Minion
+	RiftSwordMinion1.DisplayName: Rift Sword Minion1
+	RiftSwordMinion2.DisplayName: Rift Sword Minion2
+	RiftSwordMinion3.DisplayName: Rift Sword Minion3
+	RiftSwordMinion4.DisplayName: Rift Sword Minion4
+	RiftSwordMinion5.DisplayName: Rift Sword Minion5
+	RiftSwordMinion6.DisplayName: Rift Sword Minion6
+	Dawn.DisplayName: Dawn
+	Dusk.DisplayName: Dusk
+	TestSwordSwing.DisplayName: Test Sword Swing
+	RiftThrowingKnifeProjectile.DisplayName: Rift Throwing Knife Projectile
+	RiftTeardrop_Thrown.DisplayName: Rift Teardrop_ Thrown
+	RiftSpine_Thrown.DisplayName: Rift Spine_ Thrown
+	RiftYoyoT3Projectile.DisplayName: Rift Yoyo T3 Projectile
+	RiftYoyoT2Projectile.DisplayName: Rift Yoyo T2 Projectile
+	RiftYoyoT1Projectile.DisplayName: Rift Yoyo T1 Projectile
+	RiftBolt.DisplayName: Rift Bolt
+	UpDownSwingSword.DisplayName: Up Down Swing Sword
+	LasergunLaser.DisplayName: Lasergun Laser
+	RiftRailgunLaser.DisplayName: Rift Railgun Laser
+	EnchantedScepterThrown.DisplayName: Enchanted Scepter Thrown
+	EnchantedShot.DisplayName: Enchanted Shot
+	ShadowShot.DisplayName: Shadow Shot
+	ShadowScepterThrown.DisplayName: Shadow Scepter Thrown
+	HomingBone.DisplayName: Homing Bone
+	NatureScepterThrown.DisplayName: Nature Scepter Thrown
+	NatureShot.DisplayName: Nature Shot
+	NecroScepterThrown.DisplayName: Necro Scepter Thrown
+	RibCage.DisplayName: Rib Cage
+	ObsidianOculusThrown.DisplayName: Obsidian Oculus Thrown
+	ObsidianShard.DisplayName: Obsidian Shard
+	ScepterOfVespaeThrown.DisplayName: Scepter Of Vespae Thrown
+	WondersWillThrownTeal.DisplayName: Wonders Will Thrown Teal
+	WondersWillThrownPink.DisplayName: Wonders Will Thrown Pink
+	WondersWillTealShot.DisplayName: Wonders Will Teal Shot
+	WondersWillPinkShot.DisplayName: Wonders Will Pink Shot
+	HolyScepterThrown.DisplayName: Holy Scepter Thrown
+	HolyOrb.DisplayName: Holy Orb
+	ParticleDrawEntity.DisplayName: Particle Draw Entity
+	RiftChakramThrown.DisplayName: Rift Chakram Thrown
+	TenebrousArmorFXEntity.DisplayName: Tenebrous Armor F X Entity
+	RiftFlare.DisplayName: Rift Flare
+	RiftScytheEnergy.DisplayName: Rift Scythe Energy
+	RiftScytheSwing.DisplayName: Rift Scythe Swing
+	RiftPhasesaberThrown.DisplayName: Rift Phasesaber Thrown
+	RiftLaser.DisplayName: Rift Laser
+	PipeBomb.DisplayName: Pipe Bomb
+	ContenderSwordShot.DisplayName: Contender Sword Shot
+	ContenderSwordJab.DisplayName: Contender Sword Jab
+	ContenderSwordEnergy.DisplayName: Contender Sword Energy
+	WaterShot.DisplayName: Water Shot
+	CoralScepterThrown.DisplayName: Coral Scepter Thrown
+	TenebrisFireBall.DisplayName: Tenebris Fire Ball
+	NephilimEmpowermentDrawEntity.DisplayName: Nephilim Empowerment Draw Entity
+	HeroEmpowermentDrawEntity.DisplayName: Hero Empowerment Draw Entity
+	DemigodEmpowermentDrawEntity.DisplayName: Demigod Empowerment Draw Entity
+	SaviorEmpowermentDrawEntity.DisplayName: Savior Empowerment Draw Entity
+	PusBlob.DisplayName: Pus Blob
+	BloodBlob.DisplayName: Blood Blob
+	Husk_RiftChakramThrown.DisplayName: Husk_ Rift Chakram Thrown
+	Husk_RiftClaymoreProjectile.DisplayName: Husk_ Rift Claymore Projectile
+	Husk_RiftGreatswordProjectile.DisplayName: Husk_ Rift Greatsword Projectile
+	HeliciteShankSlice.DisplayName: Helicite Shank Slice
+	RiftSwordMinionHusk.DisplayName: Rift Sword Minion Husk
+	ZoneRingDrawEntity.DisplayName: Zone Ring Draw Entity
+	AuraThiefEmpowermentDrawEntity.DisplayName: Aura Thief Empowerment Draw Entity
+	PosessedPickaxeProjectile.DisplayName: Posessed Pickaxe Projectile
+	SparkFrostCleaverSwing.DisplayName: Spark Frost Cleaver Swing
+	FrostBurst.DisplayName: Frost Burst
+	FlameBurst.DisplayName: Flame Burst
+	BoomDrawEntity.DisplayName: Boom Draw Entity
+	CuproNickelJavelinThrown.DisplayName: Cupro Nickel Javelin Thrown
+	TenebrousTradewindsHoldout.DisplayName: Tenebrous Tradewinds Holdout
+	TenebrousTradewindsWind.DisplayName: Tenebrous Tradewinds Wind
+	HitAnimParticle.DisplayName: Hit Anim Particle
+	TileDeathAnimParticle.DisplayName: Tile Death Anim Particle
+	PhosphorBronzeJavelinThrown.DisplayName: Phosphor Bronze Javelin Thrown
+	SteelJavelinThrown.DisplayName: Steel Javelin Thrown
+	CunifeJavelinThrown.DisplayName: Cunife Javelin Thrown
+	TenebrousBeam.DisplayName: Tenebrous Beam
+	HitAnimParticle_TK.DisplayName: Hit Anim Particle_ T K
+	HitAnimParticle_Javelin.DisplayName: Hit Anim Particle_ Javelin
+	TenebrisJabProjectile.DisplayName: Tenebris Jab Projectile
+	TenebrisClone.DisplayName: Tenebris Clone
+	TenebrousKatanaSpin.DisplayName: Tenebrous Katana Spin
+	TenebrousBurstProjectile.DisplayName: Tenebrous Burst Projectile
+	LivingWoodCaneThrown.DisplayName: Living Wood Cane Thrown
+	TitaniumShardBig.DisplayName: Titanium Shard Big
+	TitaniumShardSmall.DisplayName: Titanium Shard Small
+	TitanScepterThrown.DisplayName: Titan Scepter Thrown
+	AreaParticle.DisplayName: Area Particle
+	ChlorophyteScepterThrown.DisplayName: Chlorophyte Scepter Thrown
+	GhoulProjectile.DisplayName: Ghoul Projectile
+	GhoulishScepterThrown.DisplayName: Ghoulish Scepter Thrown
+	RiftScepterThrown.DisplayName: Rift Scepter Thrown
+	CDAreaParticle.DisplayName: C D Area Particle
+	CelestialDiscordThrown.DisplayName: Celestial Discord Thrown
+	SolarDart.DisplayName: Solar Dart
+	StardustDartBig.DisplayName: Stardust Dart Big
+	StardustDartSmall.DisplayName: Stardust Dart Small
+	VortexDart.DisplayName: Vortex Dart
+	NebulaFlame.DisplayName: Nebula Flame
+	NebulaFlameSpawner.DisplayName: Nebula Flame Spawner
+	ConstitutionSwing.DisplayName: Constitution Swing
+	ConstitutionClone.DisplayName: Constitution Clone
+	TrailBlazer.DisplayName: Trail Blazer
+	ConstitutionBeam.DisplayName: Constitution Beam
+	GalantineLance.DisplayName: Galantine Lance
+	StarMine.DisplayName: Star Mine
+	CloneCollisionBoom.DisplayName: Clone Collision Boom
+	CursedStarProjectile.DisplayName: Cursed Star Projectile
+	StellarFlames.DisplayName: Stellar Flames
+	FoxScepterThrown.DisplayName: Fox Scepter Thrown
+	GalantineLanceFriendly.DisplayName: Galantine Lance Friendly
+	StellarFoxScepterThrown.DisplayName: Stellar Fox Scepter Thrown
+	StellarPipeBomb.DisplayName: Stellar Pipe Bomb
+	StellarBowHoldout.DisplayName: Stellar Bow Holdout
+	ConstitutionT2CrimtaneSwing.DisplayName: Constitution T2 Crimtane Swing
+	ConstitutionT2DemoniteSwing.DisplayName: Constitution T2 Demonite Swing
+	BloodProjectile.DisplayName: Blood Projectile
+	StellarFlame1.DisplayName: Stellar Flame1
+	StellarFlame2.DisplayName: Stellar Flame2
+	StellarFlame3.DisplayName: Stellar Flame3
+	StellarFlameFriendly1.DisplayName: Stellar Flame Friendly1
+	StellarFlameFriendly2.DisplayName: Stellar Flame Friendly2
+	StellarFlameFriendly3.DisplayName: Stellar Flame Friendly3
+	StellarFlameFriendly.DisplayName: Stellar Flame Friendly
+	Endemy2Swing.DisplayName: Endemy2 Swing
+	AngelWave.DisplayName: Angel Wave
+	EnergyWave.DisplayName: Energy Wave
+	AetherAngelSwing.DisplayName: Aether Angel Swing
+	AbyssWave.DisplayName: Abyss Wave
+	CarnageWave.DisplayName: Carnage Wave
+	DawnWave.DisplayName: Dawn Wave
+	DeathWave.DisplayName: Death Wave
+	OmegaWave.DisplayName: Omega Wave
+	StarWave.DisplayName: Star Wave
+	SunsetWave.DisplayName: Sunset Wave
+	BrilliantStarSwing.DisplayName: Brilliant Star Swing
+	CarnageSwing.DisplayName: Carnage Swing
+	EndlessAbyssSwing.DisplayName: Endless Abyss Swing
+	OmegasEdgeSwing.DisplayName: Omegas Edge Swing
+	SunsetSaviorSwing.DisplayName: Sunset Savior Swing
+	ValiantDawnSwing.DisplayName: Valiant Dawn Swing
+	WyvernsDestructionSwing.DisplayName: Wyverns Destruction Swing
+	EternalAbyssSwing.DisplayName: Eternal Abyss Swing
+	OrganProjectile_Variant1.DisplayName: Organ Projectile_ Variant1
+	OrganProjectile_Variant2.DisplayName: Organ Projectile_ Variant2
+	OrganProjectile_Variant3.DisplayName: Organ Projectile_ Variant3
+	OrganProjectile_Variant4.DisplayName: Organ Projectile_ Variant4
+	FleshBomb.DisplayName: Flesh Bomb
+	CFP3.DisplayName: C F P3
+	CFP2.DisplayName: C F P2
+	CFP1.DisplayName: C F P1
+	Rift_Katana_Projectile.DisplayName: Rift_ Katana_ Projectile
+	Rift_Katana_Clone.DisplayName: Rift_ Katana_ Clone
+	CursedFlameProj.DisplayName: Cursed Flame Proj
+	StellarFlameHostile.DisplayName: Stellar Flame Hostile
+	RibChainsawHoldout.DisplayName: Rib Chainsaw Holdout
+	ConstantineScytheNeedle.DisplayName: Constantine Scythe Needle
+	ConstantineScytheClone.DisplayName: Constantine Scythe Clone
+	ConstantineDollProjectile.DisplayName: Constantine Doll Projectile
+	CorruptPetal.DisplayName: Corrupt Petal
+	GigaCursedHammerMinion.DisplayName: Giga Cursed Hammer Minion
+	CursedFlamesFriendly.DisplayName: Cursed Flames Friendly
+	ContemptCursorProjectile.DisplayName: Contempt Cursor Projectile
+	WyvernTailProjectile.DisplayName: Wyvern Tail Projectile
+	GreatFlayerProjectile.DisplayName: Great Flayer Projectile
+	FleshBombFriendly.DisplayName: Flesh Bomb Friendly
+	MiniRose.DisplayName: Mini Rose
+	CorruptSigil.DisplayName: Corrupt Sigil
+	TormentedSoul.DisplayName: Tormented Soul
+	CorruptPetalHostile.DisplayName: Corrupt Petal Hostile
+	BlossomMine.DisplayName: Blossom Mine
+	GigaCursedHammerThrown.DisplayName: Giga Cursed Hammer Thrown
+	NightmarePowderProjectile.DisplayName: Nightmare Powder Projectile
+	PossessedDartRifle.DisplayName: Possessed Dart Rifle
+	TenebrisStar.DisplayName: Tenebris Star
+	TenebrousChakramThrown.DisplayName: Tenebrous Chakram Thrown
+	CorrolarySwing.DisplayName: Corrolary Swing
+	CorrolaryProj2.DisplayName: Corrolary Proj2
+	CorrolaryProj1.DisplayName: Corrolary Proj1
+	ContinuumStar.DisplayName: Continuum Star
+	ContinuumSwing.DisplayName: Continuum Swing
+	ConclusionSwing.DisplayName: Conclusion Swing
+	TemporalLance.DisplayName: Temporal Lance
+	ThrownScepter.DisplayName: Thrown Scepter
+	ButterflyofProvidenceSwing.DisplayName: Butterflyof Providence Swing
+	FireButterfly.DisplayName: Fire Butterfly
+	GenesisButterfly.DisplayName: Genesis Butterfly
+	KnowledgeButterfly.DisplayName: Knowledge Butterfly
+	JnanaSwing.DisplayName: Jnana Swing
+	StarHammerSwing.DisplayName: Star Hammer Swing
+	StarHammerThrown.DisplayName: Star Hammer Thrown
+	AllPurposeHomingStar.DisplayName: All Purpose Homing Star
+	OilTentacle.DisplayName: Oil Tentacle
+	OilProjectile.DisplayName: Oil Projectile
+	GargantuaProjectile.DisplayName: Gargantua Projectile
+	GoliathPhantom.DisplayName: Goliath Phantom
+	GargantuaStar.DisplayName: Gargantua Star
+}
+
+ItemSetBonus.HoleCatHood.SetBonus: Increases damage by {0.P0 - 100}%, attack speed by {1:P0 - 100}%, and knockback by {2:P0 - 100}%.
+
+Buffs: {
+	HopeEnsemble_Buff: {
+		DisplayName: Hope Ensemble
+		Description: You Could probably chop a thousand vegetables an hour at the soup kitchen.
+	}
+
+	DaylightOverload: {
+		DisplayName: Daylight Overload
+		Description: All you know right now is pain. YOU DESERVE THIS.
+	}
+
+	NihilistBuff: {
+		DisplayName: Nihilist Buff
+		Description: Download Calamity Entropy for the epic version!
+	}
+
+	RiftBallBuff: {
+		DisplayName: Rift Ball Buff
+		Description: An itsy bitsy black hole! And its all yours!
+	}
+
+	StoneLungs: {
+		DisplayName: Stone Lungs
+		Description:
+			'''
+			Your Lungs have been turned to stone!
+			You cannot regenerate Life.
+			You are immune to suffocation in The Rift.
+			'''
+	}
+
+	AirSeal: {
+		Description: The air inside your clothes cannot escape
+		DisplayName: Air Seal
+	}
+
+	EyeSword_Buff: {
+		Description: It seems to enjoy the nighttime better.
+		DisplayName: Eye Sword
+	}
+
+	LimusBuff: {
+		DisplayName: Limus
+		Description: Contains 8% pure mercury!
+	}
+
+	VanxarkBuff: {
+		DisplayName: Vanxark
+		Description: An unknown entity from an unknown time. It seems to take a liking to you though.
+	}
+
+	ShimmeringFlames: {
+		DisplayName: Shimmering Flames
+		Description: Your flesh is being mauled by a torrent of energy!
+	}
+
+	FriendlyShimmeringFlames: {
+		DisplayName: Friendly Shimmering Flames
+		Description: Your flesh is being mauled by a torrent of energy!
+	}
+
+	RiftSwordBuff: {
+		Description: You'd be very popular in a cyberpunk soup kitchen!
+		DisplayName: Rift Sword Buff
+	}
+
+	NightbringerDuoBuff: {
+		Description: Mods.DestroyerTest.Buffs.NightbringerDuoBuff.Description
+		DisplayName: Nightbringer Duo Buff
+	}
+
+	DaylightOverloadFriendly: {
+		Description: All you know right now is pain...
+		DisplayName: Daylight Overload Friendly
+	}
+
+	PowerTrade: {
+		DisplayName: Power Trade
+		Description: In exchange for a favorable afterlife, your enemy lowers their guard!
+	}
+
+	ShimmeringEmpowerment: {
+		DisplayName: Shimmering Empowerment
+		Description: ""
+	}
+
+	ManaBurst: {
+		Description: Your scepter has become very powerful!
+		DisplayName: Mana Burst
+	}
+
+	HateWither: {
+		Description: The raw hatred you hold within is potent enough to rot your target from the inside out.
+		DisplayName: Hate Wither
+	}
+
+	HateShock: {
+		Description: The raw hatred you hold within is potent enough to cripple your enemy.
+		DisplayName: Hate Shock
+	}
+
+	PosessedPickaxeBuff: {
+		Description: They seem perpetually restless...
+		DisplayName: Posessed Pickaxe Buff
+	}
+
+	HaepiensInferno: {
+		Description: You are going to have a very hard time putting this one out...
+		DisplayName: Haepiens Inferno
+	}
+
+	HaepiensBlizzard: {
+		Description: It's gonna be a looooooooong night for you...
+		DisplayName: Haepiens Blizzard
+	}
+
+	SpiritDrift: {
+		DisplayName: Spirit Drift
+		Description: Mods.DestroyerTest.Buffs.SpiritDrift.Description
+	}
+
+	GalantineBurn.DisplayName: Galantine Burn
+
+	OminousPrescence: {
+		DisplayName: Ominous Prescence
+		Description: Someone special is watching you...
+	}
+
+	HammerBuff: {
+		DisplayName: Hammer Buff
+		Description: Mods.DestroyerTest.Buffs.HammerBuff.Description
+	}
+
+	DartRifleMinionBuff: {
+		DisplayName: Dart Rifle Minion Buff
+		Description: A cursed dart rifle is defending you!
+	}
+
+	MagicFatigue: {
+		DisplayName: Magic Fatigue
+		Description: You are unable to access your magic inside!
+	}
+
+	GargantuaBoost: {
+		Description: The Living Diamond empowers Gargantua!
+		DisplayName: Gargantua Boost
+	}
+}
+
+NPCs: {
+	ExoDestroyerBody.DisplayName: HM-05
+	ExoDestroyerHead.DisplayName: HM-05
+	ExoDestroyerTail.DisplayName: HM-05
+	ExoProbe.DisplayName: HM-05 Defense Module
+	VectorsTestEntity.DisplayName: Vectors Test Entity
+
+	Prospector: {
+		DisplayName: Prospector
+
+		TownNPCMood: {
+			Content: Besides not having my pet cat Felix anymore (rest in peace...), I feel quite alright!
+			NoHome: I'm not too bothered by staying out here, since I spend a lot of time away from 'home' anyway. That said, I would definitely appreciate a place to call my own.
+			FarFromHome: Gee, my knees are killing me. Cruel of you to make me walk this far knowing I'd have to walk the same distance back.
+			LoveSpace: Finally, I can offload my inventory for a while!
+			DislikeCrowded: While I love the ready consumers nearby, does it not seem a slight bit... packed?
+			HateCrowded: Is it that hard to make the rooms just a wee bit larger?
+			LoveBiome: Ah, the vast caverns. Much to see, much to do, much to sell, to acquaintances such as you!
+			LikeBiome: I can't complain about an open, temperate environment, though there are places I'd prefer to be at the moment.
+			DislikeBiome: It's hot, it's dry, the only good wares below are amber and fossils, and the sun never lets up. And you expect me to be HAPPY here?
+			LoveNPC: Mmmm, {NPCName}, just thinking about him makes my day.
+			LikeNPC: Me and {NPCName} have common interests. I can respect a man of business.
+			DislikeNPC: Yknow, {NPCName} really gets on my nerves sometimes. He's always nagging about the prominence of magic and how I'd probably attract more customers if I sold magical things. What kind of a self-absorbed snob must you be to tell another man how to run his business?
+			HateNPC: "{NPCName}, oh {NPCName}. He thinks life is all about games and scores and having fun. He needs to be put to work for a day if you ask me."
+			LikeNPC_Princess: So regal, {NPCName} is. That satin must be imported!
+			Princess_LovesNPC: "{NPCName} is one of my more favored constituents. When I request a new gilding for my scepter, he offers cheaper alternatives to the usual gold and silver, which spares me the coinage."
+		}
+	}
+
+	TenebrousSlime.DisplayName: Tenebrous Slime
+	TenebrousPhantasm.DisplayName: Tenebrous Phantasm
+	RiftSchade.DisplayName: Rift Schade
+	RiftDiggerTail.DisplayName: Rift Digger Tail
+	RiftDiggerHead.DisplayName: Rift Digger Head
+	RiftDiggerBody.DisplayName: Rift Digger Body
+	PossessedScepter.DisplayName: Possessed Scepter
+	VampireBoss.DisplayName: Vampire Boss
+	WyvernCorpseBody1.DisplayName: Wyvern Corpse
+	WyvernCorpseBody2.DisplayName: Wyvern Corpse
+	WyvernCorpseBody3.DisplayName: Wyvern Corpse
+
+	ConstitutionBoss: {
+		DisplayName: Constitution
+		DespawnMessage: "{0} returns to the sky, deeming you unworthy..."
+	}
+
+	WyvernCorpseHead: {
+		DisplayName: Wyvern Corpse
+		Bestiary: A great wyvern fell from the sky, and landed in the crimson. First away went its fur, then its cartillage, and finally, most of its fats. Now, all that remains is its rotten flesh, haning off the bones loosely with Ichor boils everywhere.
+		DespawnMessage: The Wyvern escapes to look for more food...
+	}
+
+	WyvernCorpseLegs.DisplayName: Wyvern Corpse
+	WyvernCorpseTail.DisplayName: Wyvern Corpse
+
+	NightmareRose: {
+		DisplayName: Nightmare Rose
+		DespawnMessage: The amalgamation disbands...
+	}
+
+	EimvurNPC: {
+		DisplayName: Blood Goddess
+
+		TownNPCMood: {
+			Content: I could be worse.
+			NoHome: I'd be okay with a nomadic lifestyle if this human body wasnt so sensitive...
+			FarFromHome: It seems I'm a long way from home.
+			LoveSpace: It is Comfortably Spacious here.
+			DislikeCrowded: Walking as a goddess amongst men I would think I'd be treated a little more highly than this compaction.
+			HateCrowded: I need fresh air.
+			LoveBiome: "{BiomeName} Makes me quite happy. Its the closest I can get to a bloody world."
+			LikeBiome: "{BiomeName}. Not much to say here."
+			DislikeBiome: I'd rather be elsewhere...
+			HateBiome: My goodness, {BiomeName}, eugh. Get me out of here right now.
+			LoveNPC: I love {NPCName}.
+			LikeNPC: I like {NPCName}.
+			DislikeNPC: I dislike {NPCName}.
+			HateNPC: I hate {NPCName}.
+			LikeNPC_Princess: I like {NPCName}. Pink cutie. Heh...
+			Princess_LovesNPC: I feel enamored by {NPCName} and her divine prescence. Though, I fear she may be a lesbian. Help.
+		}
+	}
+
+	GigaCursedHammer.DisplayName: Giga Cursed Hammer
+	TheGreatFlayer.DisplayName: The Great Flayer
+	NightmareRoseBoss.DisplayName: Nightmare Rose
+	CursedFlameNode.DisplayName: Cursed Flame Node
+	IchorNode.DisplayName: Ichor Node
+
+	Scholar: {
+		DisplayName: Scholar
+
+		TownNPCMood: {
+			Content: I feel comforable here.
+			NoHome: I need somewhere to unpack my stuff.
+			FarFromHome: I am far from my books. My research cannot continue.
+			LoveSpace: So much space to do my work, I like it.
+			DislikeCrowded: It's a little too crowded for me.
+			HateCrowded: It's very crowded. Please move me.
+			LoveBiome: I love {BiomeName}.
+			LikeBiome: I like {BiomeName}.
+			DislikeBiome: I dislike {BiomeName}.
+			LoveNPC: I love {NPCName}.
+			LikeNPC: I like {NPCName}.
+			DislikeNPC: I dislike {NPCName}.
+			HateNPC: I hate {NPCName}.
+			LikeNPC_Princess: I like {NPCName}.
+			Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+}
+
+Keybinds: {
+	StarBlast.DisplayName: Star Blast
+	"Conclusion Star Blast.DisplayName": Conclusion Star Blast
+	"Hero Helmet Guard.DisplayName": Hero Helmet Guard
+	"Shadow Tome Teleport.DisplayName": Shadow Tome Teleport
+	"Open Achievement Book.DisplayName": Open Achievement Book
+	"Mana Burst.DisplayName": Mana Burst
+	"Tenebrous Clone Teleort.DisplayName": Tenebrous Clone Teleort
+	"Deadly Blossom Spawn.DisplayName": Deadly  Blossom  Spawn
+	"HoleCat Oil Tentacle.DisplayName": Hole Cat  Oil  Tentacle
+}
+
+Tiles: {
+	RiftCache: {
+		MapEntry0: RiftCache
+		MapEntry1: RiftCache
+	}
+
+	Helicite_Crystal.MapEntry: Helicite Crystal
+	Tile_RiftConfiguratorArmory.MapEntry: Tile_ Rift Configurator Armory
+	Tile_RiftConfiguratorCore.MapEntry: Tile_ Rift Configurator Core
+	Tile_RiftConfiguratorWeaponry.MapEntry: Tile_ Rift Configurator Weaponry
+	Tile_RiftConfiguratorTools.MapEntry: Tile_ Rift Configurator Tools
+	Tile_RiftConfiguratorFurniture.MapEntry: Tile_ Rift Configurator Furniture
+	Tile_HeliciteCrystal.MapEntry: Tile_ Helicite Crystal
+
+	Tile_RiftCache: {
+		MapEntry1: Mods.DestroyerTest.Tiles.Tile_RiftCache.MapEntry1
+		MapEntry0: Mods.DestroyerTest.Tiles.Tile_RiftCache.MapEntry0
+	}
+}
+
+Biomes: {
+	RiftSurface: {
+		DisplayName: The Rift (Surface)
+		TownNPCDialogueName: The Rift
+	}
+
+	RiftDesert: {
+		DisplayName: Rift Desert
+		TownNPCDialogueName: the Rift Desert
+	}
+}
+
+WorldGen: {
+	HelicitePassMessage: Putting the sky deep underground...
+	BlessedWithHeliciteMessage: Radiant Fragments of solar energy embed themselves in the rocks near to hell!
+}
+
+Emotes: {
+	ProspectorEmote.Command: prospectoremote
+	UntitledEmote.Command: untitledemote
+	VampireEmote.Command: vampireemote
+}
+
+DamageClasses.ScepterClass.DisplayName: Scepter Damage
+
+RecipeCondition: {
+	Charge: Charge this item's Husk.
+	DefeatNightmareRose: Defeat the Nightmare Rose
+	DefeatWyvernCorpse: Defeat Wyvern Corpse
+}
+
+UI: {
+	LivingShadow: Charge: {0}%
+	MeleeImmunity: "{0}%"
+}
+
+Configs: {
+	DTConfig: {
+		MinionExtrasToggle: {
+			Tooltip: If disabled, annoying minion behaviors will cease.
+			Label: Lose your Sanity a little more by the day
+		}
+
+		DisplayName: Client side Configs
+
+		UnnerfTenebrousKatana: {
+			Label: Unnerf Tenebrous Katana
+			Tooltip: The Tenebrous Katana used to be far more powerful, but it was rolled back to match it's pre-moonlord place in progression. Checking this off will restore it to its original damage statistic; no strings attatched.
+		}
+	}
+}
+
+TenebrousTrial: {
+	LunarBossDefeated: The darkness has vanished. Your eyes burn from the sudden flush of true luminance.
+	CultistDefeated: The light is within your grasp...
+	EmpressDefeated: With glimmering rainbows, the darkness is reduced to its last waning vestiges...
+	FishronDefeated: The high seas settle.
+	GolemDefeated: The false god's solar core gleams into the darkness, revealing the path to the light...
+	PlanteraDefeated: Chlorophyte Glimmers in the soil, singeing away the darkness...
+	NautilusDefeated: The bloodied seas settle.
+	SkeletronPrimeDefeated: The mechanical cuthulu project falls behind now, with them needing a new guardian to ward off interruptors.
+	TwinsDefeated: The mechanical cuthulu project falls behind, with them needing to make new eyes.
+	DestroyerDefeated: The mechanical cuthulu project falls behind, with them needing to make a new spine.
+	QueenSlimeDefeated: It seems the mistress of his magesty the gelatinous has lost her edge for battle...
+	WallofFleshDefeated: The spirits blaze bright, pushing the darkness back further!
+	SkeletronDefeated: HE IS FREE...
+	QueenBeeDefeated: The darkness recedes further with the dethroning of a respected matriarch.
+	DeerclopsDefeated: You can now be at ease in the tundra, for the frostbitten predator has ceased.
+	EaterofWorldsDefeated: No more remains of Cuthulu. But that will not stop the darkness from keeping hold...
+	BrainofCuthuluDefeated: No more remains of Cuthulu. But that will not stop the darkness from keeping hold...
+	KingSlimeDefeated: The slaying of the goopy ruler has beaten back some of the darkness...
+	EyeofCuthuluDefeated: The world trembles...
+}
+
+BossChecklist: {
+	Constitution.Hint: Speak with the merchant after defeating skeletron...
+	WyvernCorpse.Hint: Kill a vicious bunny, and use it's fresh, bleeding body to bait out the Wyvern.
+	NightmareRose.Hint:
+		'''
+		Obtain a Collection of stories no person should ever be reading, and unfurl its pages in the corruption. 
+		Please Note: The boss will spawn with its Bottom Center on top of the cursor, and will fall to a solid tile below.
+		Keep that in mind when spawning.
+		'''
+}
+
+BookText: {
+	NightmareRoseArenaBook: {
+		Page1:
+			'''
+			INSTRUCTIONS FOR USING THE PREMADE OMINOUS GARDEN
+			By Constantine
+			'''
+		Page2:
+			'''
+			First, visit the mod's steam page. Then visit the google drive
+			link to the structure file. Download it, then, after making
+			sure you have structurehelper enabled, bring the structure
+			file to your SavedStructures folder.
+			'''
+		Page3:
+			'''
+			This will require the use of a cheat mod like HERO's or
+			DragonLens. Grab the structure placement wand, go to your 
+			corruption biome. If you want it above ground, go about a
+			hundred or a hundred and a half blocks up from the surface.
+			'''
+	}
+
+	ShadeSeedBook: {
+		Page1:
+			'''
+			SHADE UNDER THE TREES
+			Author Unknown
+			(This book contains multiple possible World Names for the Tenebrous Trial)
+			'''
+		Page2:
+			'''
+			Do not search for the Shade Under the Trees, as my own
+			inquest turned up naught but a cloud of complete darkness.
+			It was akin to something I'd describe seeing during a
+			Witching Hour. You would imagine as someone with skin
+			problems, I'd be happy to have another Respite From Sun,
+			but this was to a degree not forseen.
+			'''
+	}
+
+	ScholarAutobiography: {
+		Page1:
+			'''
+			AUTOBIAGRAPHY : Volume I
+			By Joan Curen
+			'''
+		Page2:
+			'''
+			My life began on a riverside farm on the mainland of Musevuria.
+			I learned to read quite early on, but the skill was largely
+			unacknowledged by my family. All they were concerned with 
+			was my usefulness taking care of the livestock. As such,
+			I did a lot of work on that farm. When there wasnt much to do
+			on the farm, I would visit the neighbor, as the neighbor had
+			many books to read. 
+			'''
+		Page3:
+			'''
+			When I became a young man, I left the farm to pursue more
+			knowledge. That led me to a school in Ebüchmoon, a northern
+			territory of Museveria. I had to work some odd jobs, do a
+			few favors, and had to make a professor commit adultery by
+			sleeping with me; it was a necessary evil. My efforts did
+			pay off in the end, as I was allowed to study at that
+			school and prepare for a career in scholarly exploration.
+			'''
+		Page4:
+			'''
+			To begin my career, I decided to leave the mainland and
+			explore somewhere only travelling merchants spoke of. 
+			An island thousands of helans away called "Terraria".
+			I was not able to take very many books with me, as they
+			would weigh on the boat too much. Out of those few books,
+			I could only take so many written ones, as the purpose
+			of the exploration was to fill books, not read them.
+			'''
+	}
+
+	LivingShadowLoreBook: {
+		Page1:
+			'''
+			LIVING SHADOWS: A MATERIAL ANALYSIS
+			By: Joan Curen
+			'''
+		Page2:
+			'''
+			Living Shadows are a material found inside the bodies of
+			the various creatures that come out of hiding in a solar eclipse.
+			The dark mass that composes most of it is very cold and sticky,
+			having a consistency similar to tree sap.
+			While the orange outer energy is quite the oppsite, burning
+			my hands and damaging equipment on several occasions.
+			'''
+		Page3:
+			'''
+			I did find though, that by stimulating these blobs with an
+			electrical current within a certain range of voltage, the
+			energy will separate from the dark congealment.
+			By placing this circuit inside separated chambers, I was
+			able to place living shadows inside one after another,
+			completing the circuit and then breaking it as to charge
+			batteries with the energy, and fill canisters with the
+			congealment.
+			'''
+		Page4: ""
+	}
+
+	BloodGoddessLoreBook: {
+		Page1:
+			'''
+			This is placeholder text. This is placeholder text. This is placeholder text. This is placeholder text. This is placeholder text.
+
+			This is newline placeholder text.
+			'''
+		Page2:
+			'''
+			This is also placeholder text. This is also placeholder text. This is also placeholder text. This is also placeholder text. This is also placeholder text.
+
+			This is newline placeholder text.
+			'''
+		Page3:
+			'''
+			You guessed it, placeholder text. You guessed it, placeholder text. You guessed it, placeholder text. You guessed it, placeholder text. You guessed it, placeholder text.
+
+			You guessed it, Newline placeholder text.
+			'''
+		Page4:
+			'''
+			You guessed it, placeholder text. You guessed it, placeholder text. You guessed it, placeholder text. You guessed it, placeholder text. You guessed it, placeholder text.
+
+			You guessed it, Newline placeholder text.
+			'''
+	}
+}

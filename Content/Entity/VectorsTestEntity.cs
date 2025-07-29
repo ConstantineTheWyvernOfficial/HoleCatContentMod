@@ -1,0 +1,134 @@
+﻿using Microsoft.Xna.Framework;
+using MonoMod.Cil;
+using System;
+using System.IO;
+using Terraria;
+using Terraria.Audio;
+using Terraria.GameContent.Bestiary;
+using Terraria.ID;
+using Terraria.ModLoader;
+using Terraria.ModLoader.Utilities;
+
+namespace DestroyerTest.Content.Entity
+{
+	/// <summary>
+	/// This file shows off a critter npc. The unique thing about critters is how you can catch them with a bug net.
+	/// The important bits are: Main.npcCatchable, NPC.catchItem, and Item.makeNPC.
+	/// We will also show off adding an item to an existing RecipeGroup (see ExampleRecipes.AddRecipeGroups).
+	/// Additionally, this example shows an involved IL edit.
+	/// </summary>
+	public class VectorsTestEntity : ModNPC
+	{
+
+		/// <summary>
+		/// Change the following code sequence in Wiring.HitWireSingle
+		/// <code>
+		///case 61:
+		///num115 = 361;
+		/// </code>
+		/// to
+		/// <code>
+		///case 61:
+		///num115 = Main.rand.NextBool() ? 361 : NPC.type
+		/// </code>
+		/// This causes the frog statue to spawn this NPC 50% of the time
+		/// </summary>
+		/// <param name="ilContext"> </param>
+
+		public override void SetStaticDefaults() {
+			Main.npcCatchable[Type] = true; // This is for certain release situations
+
+			// These three are typical critter values
+			NPCID.Sets.CountsAsCritter[Type] = true;
+			NPCID.Sets.TakesDamageFromHostilesWithoutBeingFriendly[Type] = true;
+			NPCID.Sets.TownCritter[Type] = true;
+
+			// The frog is immune to confused
+			NPCID.Sets.SpecificDebuffImmunity[Type][BuffID.Confused] = true;
+		}
+
+		public override void SetDefaults() {
+			NPC.width = 12;
+			NPC.height = 10;
+			NPC.aiStyle = -1;
+			NPC.damage = 0;
+			NPC.defense = 0;
+			NPC.lifeMax = 50000000;
+			NPC.HitSound = SoundID.NPCHit1;
+			NPC.DeathSound = SoundID.NPCDeath1;
+            NPC.noGravity = true;
+			// Sets the above
+			NPC.lavaImmune = true;
+		}
+        internal int MoveForwardForce = 2;
+        internal int radiusofselection = 100;
+        private Vector2 targetPosition;
+        private int state = 0; // 0 = idle, 1 = turning, 2 = moving
+        private float turnSpeed = 0.1f; // Speed at which the entity turns
+        public override void AI()
+        {
+            switch (state)
+            {
+                case 0: // Idle state
+                    SelectNewTargetPosition();
+                    state = 1; // Transition to turning state
+                    break;
+
+                case 1: // Turning state
+                    TurnTowardsTarget();
+                    if (HasTurnedToTarget())
+                    {
+                        state = 2; // Transition to moving state
+                    }
+                    break;
+
+                case 2: // Moving state
+                    MoveTowardsTarget();
+                    if (HasReachedTarget())
+                    {
+                        state = 0; // Transition to idle state
+                    }
+                    break;
+            }
+        }
+            private void SelectNewTargetPosition()
+        {
+            // Randomly select an angle between 0 and 2π radians
+            float angle = Main.rand.NextFloat() * MathHelper.TwoPi;
+
+            // Calculate the coordinates of the point on the circumference
+            targetPosition = NPC.Center + new Vector2((float)Math.Cos(angle), (float)Math.Sin(angle)) * radiusofselection;
+        }
+
+        private void TurnTowardsTarget()
+        {
+            // Calculate the angle to the target position
+            float targetAngle = (targetPosition - NPC.Center).ToRotation();
+            float currentAngle = NPC.rotation;
+
+            // Smoothly turn towards the target angle
+            NPC.rotation = MathHelper.Lerp(currentAngle, targetAngle, turnSpeed);
+        }
+
+        private bool HasTurnedToTarget()
+        {
+            // Check if the entity has turned to face the target position
+            float targetAngle = (targetPosition - NPC.Center).ToRotation();
+            return Math.Abs(MathHelper.WrapAngle(NPC.rotation - targetAngle)) < 0.1f;
+        }
+
+        private void MoveTowardsTarget()
+        {
+            // Calculate the direction vector to the target position
+            Vector2 direction = (targetPosition - NPC.Center).SafeNormalize(Vector2.Zero);
+            NPC.velocity = direction * MoveForwardForce;
+        }
+
+        private bool HasReachedTarget()
+        {
+            // Check if the entity has reached the target position
+            return Vector2.Distance(NPC.Center, targetPosition) < 10f;
+        }
+
+    }
+}
