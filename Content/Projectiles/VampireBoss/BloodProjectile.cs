@@ -1,3 +1,5 @@
+using DestroyerTest.Content.Particles;
+using InnoVault.PRT;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Enums;
@@ -27,7 +29,7 @@ public class BloodProjectile : ModProjectile
 		{
 			Projectile.width = 16; // The width of projectile hitbox
 			Projectile.height = 16; // The height of projectile hitbox
-			Projectile.alpha = 200;
+			Projectile.alpha = 255;
 
 			Projectile.DamageType = DamageClass.Generic; // What type of damage does this projectile affect?
 			Projectile.friendly = false; // Can the projectile deal damage to enemies?
@@ -42,39 +44,35 @@ public class BloodProjectile : ModProjectile
 			Projectile.netUpdate = true;
 			}
 
-        // Custom AI
-        public override void AI()
-        {
+		// Custom AI
+		public override void AI()
+		{
+			Rectangle SpawnBox = new Rectangle((int)Projectile.position.X, (int)Projectile.position.Y, Projectile.width, Projectile.height);
+			PRTLoader.NewParticle(PRTLoader.GetParticleID<BloodParticle>(), Main.rand.NextVector2FromRectangle(SpawnBox), Vector2.Zero, Color.White, 1);
+			float maxDetectRadius = 40f; // The maximum radius at which a projectile can detect a target
 
-            float maxDetectRadius = 400f; // The maximum radius at which a projectile can detect a target
+			// First, we find a homing target if we don't have one
+			if (HomingTarget == null)
+			{
+				HomingTarget = FindClosestPlayer(maxDetectRadius);
+			}
 
-            // First, we find a homing target if we don't have one
-            if (HomingTarget == null)
-            {
-                HomingTarget = FindClosestPlayer(maxDetectRadius);
-            }
+			// If we have a homing target, make sure it is still valid. If the NPC dies or moves away, we'll want to find a new target
+			if (HomingTarget != null && !IsValidTarget(HomingTarget))
+			{
+				HomingTarget = null;
+			}
 
-            // If we have a homing target, make sure it is still valid. If the NPC dies or moves away, we'll want to find a new target
-            if (HomingTarget != null && !IsValidTarget(HomingTarget))
-            {
-                HomingTarget = null;
-            }
+			// If we don't have a target, don't adjust trajectory
+			if (HomingTarget == null)
+				return;
 
-            // If we don't have a target, don't adjust trajectory
-            if (HomingTarget == null)
-                return;
-
-            // If found, we rotate the projectile velocity in the direction of the target.
-            // We only rotate by 3 degrees an update to give it a smooth trajectory. Increase the rotation speed here to make tighter turns
-            float length = Projectile.velocity.Length();
-            float targetAngle = Projectile.AngleTo(HomingTarget.Center);
+			// If found, we rotate the projectile velocity in the direction of the target.
+			// We only rotate by 3 degrees an update to give it a smooth trajectory. Increase the rotation speed here to make tighter turns
+			float length = Projectile.velocity.Length();
+			float targetAngle = Projectile.AngleTo(HomingTarget.Center);
 			Projectile.rotation = Projectile.velocity.ToRotation() + MathHelper.PiOver2;
-            Projectile.velocity = Projectile.velocity.ToRotation().AngleTowards(targetAngle, MathHelper.ToRadians(300)).ToRotationVector2() * length;
-            
-            
-			
-            Dust.NewDust(Projectile.Center, Projectile.width, Projectile.height, DustID.Blood, 0, 0, 70, default, 1.0f);
-            
+			Projectile.velocity = Projectile.velocity.ToRotation().AngleTowards(targetAngle, MathHelper.ToRadians(10)).ToRotationVector2() * length;
 			}
 
 			// Finding the closest NPC to attack within maxDetectDistance range

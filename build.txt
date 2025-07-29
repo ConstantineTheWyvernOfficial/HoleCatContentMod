@@ -1,6 +1,6 @@
 displayName = HoleCat's Content Mod
 author = HoleCat
-version = 2.1.68.5
+version = 2.1.68.6
 modReferences = InnoVault
 dependencies = InnoVault
 

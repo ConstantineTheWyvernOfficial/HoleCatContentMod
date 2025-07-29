@@ -2,6 +2,7 @@ using System;
 using DestroyerTest.Common;
 using DestroyerTest.Content.Particles;
 using InnoVault.PRT;
+using Microsoft.Build.Evaluation;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Peripherals.RGB;
@@ -61,6 +62,8 @@ namespace DestroyerTest.Content.Projectiles
 
 		public override bool PreDraw(ref Color lightColor)
 		{
+			if (!Projectile.active || Projectile.timeLeft <= 0)
+			return false;
 			// Draws an afterimage trail. See https://github.com/tModLoader/tModLoader/wiki/Basic-Projectile#afterimage-trail for more information.
 
 			//var effect = distortion;
@@ -72,20 +75,26 @@ namespace DestroyerTest.Content.Projectiles
 			//effect.Parameters["noiseTexture"].SetValue(ModContent.Request<Texture2D>("DestroyerTest/Effects/turbulentnoise").Value);
 			//effect.CurrentTechnique.Passes[0].Apply();
 
-			Vector2 drawOrigin = new Vector2(texture.Width * 0.5f, Projectile.height * 0.5f);
-			for (int k = Projectile.oldPos.Length - 1; k > 0; k--)
+			if (Projectile.active == true)
 			{
-				Vector2 drawPos = (Projectile.oldPos[k] - Main.screenPosition) + drawOrigin + new Vector2(0f, Projectile.gfxOffY);
-				Color color = Projectile.GetAlpha(lightColor) * ((Projectile.oldPos.Length - k) / (float)Projectile.oldPos.Length);
-				Main.EntitySpriteDraw(texture, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0);
+				Vector2 drawOrigin = new Vector2(texture.Width * 0.5f, Projectile.height * 0.5f);
+				for (int k = Projectile.oldPos.Length - 1; k > 0; k--)
+				{
+					Vector2 drawPos = (Projectile.oldPos[k] - Main.screenPosition) + drawOrigin + new Vector2(0f, Projectile.gfxOffY);
+					Color color = Projectile.GetAlpha(lightColor) * ((Projectile.oldPos.Length - k) / (float)Projectile.oldPos.Length);
+					Main.EntitySpriteDraw(texture, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0);
+				}
 			}
 
 			return true;
 		}
 
+		public int SearchTimer = 360;
+
 		// Custom AI
 		public override void AI()
 		{
+			Player player = Main.player[Projectile.owner];
 			Projectile.rotation = Projectile.velocity.ToRotation() + MathHelper.PiOver4;
 
 
@@ -116,30 +125,41 @@ namespace DestroyerTest.Content.Projectiles
 				return;
 			}
 
+			SearchTimer--;
 
-
-			// First, we find a homing target if we don't have one
-			if (HomingTarget == null)
+			if (SearchTimer > 0)
 			{
-				HomingTarget = FindClosestNPC(maxDetectRadius);
-			}
+				// First, we find a homing target if we don't have one
+				if (HomingTarget == null)
+				{
+					HomingTarget = FindClosestNPC(maxDetectRadius);
+				}
 
-			// If we have a homing target, make sure it is still valid. If the NPC dies or moves away, we'll want to find a new target
-			if (HomingTarget != null && !IsValidTarget(HomingTarget))
+				// If we have a homing target, make sure it is still valid. If the NPC dies or moves away, we'll want to find a new target
+				if (HomingTarget != null && !IsValidTarget(HomingTarget))
+				{
+					HomingTarget = null;
+				}
+
+				// If we don't have a target, don't adjust trajectory
+				if (HomingTarget == null)
+					return;
+
+				// If found, we rotate the projectile velocity in the direction of the target.
+				// We only rotate by 3 degrees an update to give it a smooth trajectory. Increase the rotation speed here to make tighter turns
+				float targetAngle = Projectile.AngleTo(HomingTarget.Center);
+				float length = Projectile.velocity.Length();
+				Projectile.velocity = Projectile.velocity.ToRotation().AngleTowards(targetAngle, MathHelper.ToRadians(30)).ToRotationVector2() * (length + 5);
+				Projectile.rotation = Projectile.velocity.ToRotation() + MathHelper.PiOver4;
+			}
+			if (SearchTimer <= 0)
 			{
-				HomingTarget = null;
+				Projectile.hostile = true;
+				float targetAngle = Projectile.AngleTo(player.Center);
+				float length = Projectile.velocity.Length();
+				Projectile.velocity = Projectile.velocity.ToRotation().AngleTowards(targetAngle, MathHelper.ToRadians(180)).ToRotationVector2() * (length + 5);
+				Projectile.rotation = Projectile.velocity.ToRotation() + MathHelper.PiOver4;
 			}
-
-			// If we don't have a target, don't adjust trajectory
-			if (HomingTarget == null)
-				return;
-
-			// If found, we rotate the projectile velocity in the direction of the target.
-			// We only rotate by 3 degrees an update to give it a smooth trajectory. Increase the rotation speed here to make tighter turns
-			float targetAngle = Projectile.AngleTo(HomingTarget.Center);
-			float length = Projectile.velocity.Length();
-			Projectile.velocity = Projectile.velocity.ToRotation().AngleTowards(targetAngle, MathHelper.ToRadians(30)).ToRotationVector2() * (length + 5);
-			Projectile.rotation = Projectile.velocity.ToRotation() + MathHelper.PiOver4;
 		}
 
 		// Finding the closest NPC to attack within maxDetectDistance range
@@ -185,10 +205,19 @@ namespace DestroyerTest.Content.Projectiles
 			return target.CanBeChasedBy();
 		}
 
-        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
-        {
-            SoundEngine.PlaySound(Hit, target.Center);
-        }
-			
-    }
+		public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
+		{
+			SoundEngine.PlaySound(Hit, target.Center);
+		}
+
+
+		public override void OnHitPlayer(Player target, Player.HurtInfo info)
+		{
+			Main.NewText("HitPlayer");
+			SoundEngine.PlaySound(Hit, target.Center);
+			Projectile.active = false;
+		}
+
+		
+	}
 }
