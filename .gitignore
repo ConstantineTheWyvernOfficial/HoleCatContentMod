@@ -4,10 +4,12 @@
 *.suo
 *.userosscache
 *.sln.docstates
+*.editorconfig
 
 # Build results
 bin/
 obj/
+.vs/
 *.exe
 *.dll
 *.pdb
