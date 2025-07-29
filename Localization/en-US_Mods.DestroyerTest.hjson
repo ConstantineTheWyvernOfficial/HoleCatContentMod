@@ -2778,6 +2778,11 @@ Items: {
 			10% Increased Knockback.
 			'''
 	}
+
+	WyvernSkullRose: {
+		Tooltip: ""
+		DisplayName: Wyvern Skull Rose
+	}
 }
 
 Projectiles: {
@@ -3075,7 +3080,7 @@ Buffs: {
 
 	DaylightOverload: {
 		DisplayName: Daylight Overload
-		Description: All you know right now is pain. YOU DESERVE THIS.
+		Description: All you know right now is pain.
 	}
 
 	NihilistBuff: {
