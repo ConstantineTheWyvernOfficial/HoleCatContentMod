@@ -2501,11 +2501,11 @@ Items: {
 
 	WyvernsDestruction: {
 		DisplayName: Wyverns Destruction
-		Tooltip: Original Weapon from Ultraconyx
+		Tooltip: "Original Weapon is from Ultraconyx"
 	}
 
 	RibChainsaw: {
-		Tooltip: RIP AND TEAR. ITS BETTER FOR ME ANYWAY.
+		Tooltip: "Rip and tear through your foes using.... the flesh of another foe."
 		DisplayName: Rib Chainsaw
 	}
 

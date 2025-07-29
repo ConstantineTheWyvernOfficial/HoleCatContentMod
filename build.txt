@@ -1,6 +1,6 @@
-displayName = MY MEDIUM
-author = Constantine the Wyvern
-version = 2.1.68.4
+displayName = HoleCat's Content Mod
+author = HoleCat
+version = 2.1.68.5
 modReferences = InnoVault
 dependencies = InnoVault
 
