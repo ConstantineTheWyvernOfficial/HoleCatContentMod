@@ -20,15 +20,17 @@ namespace DestroyerTest.Content.Equips
 	{
 
 
-		public override void SetStaticDefaults() {
+		public override void SetStaticDefaults()
+		{
 			// If your head equipment should draw hair while drawn, use one of the following:
-            //ArmorIDs.Head.Sets.DrawHead[Item.headSlot] = false; // Don't draw the head at all. Used by Space Creature Mask
+			//ArmorIDs.Head.Sets.DrawHead[Item.headSlot] = false; // Don't draw the head at all. Used by Space Creature Mask
 			ArmorIDs.Head.Sets.DrawHatHair[Item.headSlot] = true; // Draw hair as if a hat was covering the top. Used by Wizards Hat
-			//ArmorIDs.Head.Sets.DrawFullHair[Item.headSlot] = true; // Draw all hair as normal. Used by Mime Mask, Sunglasses
-			// ArmorIDs.Head.Sets.DrawsBackHairWithoutHeadgear[Item.headSlot] = true;
+																  //ArmorIDs.Head.Sets.DrawFullHair[Item.headSlot] = true; // Draw all hair as normal. Used by Mime Mask, Sunglasses
+																  // ArmorIDs.Head.Sets.DrawsBackHairWithoutHeadgear[Item.headSlot] = true;
 		}
 
-		public override void SetDefaults() {
+		public override void SetDefaults()
+		{
 			Item.width = 22; // Width of the item
 			Item.height = 12; // Height of the item
 			Item.value = Item.sellPrice(gold: 8); // How many coins the item is worth
@@ -37,26 +39,21 @@ namespace DestroyerTest.Content.Equips
 		}
 
 		// IsArmorSet determines what armor pieces are needed for the setbonus to take effect
-		public override bool IsArmorSet(Item head, Item body, Item legs) {
+		public override bool IsArmorSet(Item head, Item body, Item legs)
+		{
 			return body.type == ModContent.ItemType<FleeceRobe>();
 		}
 
 
 
-        // UpdateArmorSet allows you to give set bonuses to the armor.
-        public override void UpdateArmorSet(Player player)
-        {
-            player.setBonus = "4% Increased Scepter Damage and an Additional 20 copper on enemy kills.";
-            player.GetDamage(ModContent.GetInstance<ScepterClass>()) *= 1.04f;
-            player.AddCoinLuck(player.Center, 20);
-        }
-
-		public override void AddRecipes() {
-			CreateRecipe()
-				.AddIngredient<ManganeseBronze>(5)
-				.AddTile(TileID.Anvils)
-				.Register();
-            
+		// UpdateArmorSet allows you to give set bonuses to the armor.
+		public override void UpdateArmorSet(Player player)
+		{
+			player.setBonus = "4% Increased Scepter Damage and an Additional 20 copper on enemy kills.";
+			player.GetDamage(ModContent.GetInstance<ScepterClass>()) *= 1.04f;
+			player.AddCoinLuck(player.Center, 20);
 		}
+
+		//Maybe I'll put this in a chest. I dunno.
 	}
 }

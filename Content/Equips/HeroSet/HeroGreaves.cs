@@ -24,15 +24,5 @@ namespace DestroyerTest.Content.Equips.HeroSet
 		public override void UpdateEquip(Player player) {
         player.armorEffectDrawOutlinesForbidden = true; // or whatever action you're trying to trigger
         }
-
-
-		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
-		public override void AddRecipes() {
-			CreateRecipe()
-				.AddIngredient<CunifeBar>(5)
-                .AddIngredient(ItemID.Obsidian, 15)
-				.AddTile(TileID.Anvils)
-				.Register();
-		}
 	}
 }

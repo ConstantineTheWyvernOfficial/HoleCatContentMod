@@ -13,7 +13,8 @@ namespace DestroyerTest.Content.Equips.HeroSet
 	[AutoloadEquip(EquipType.Wings)]
 	public class HeroWings : ModItem
 	{
-		public override void SetStaticDefaults() {
+		public override void SetStaticDefaults()
+		{
 			// These wings use the same values as the solar wings
 			// Fly time: 180 ticks = 3 seconds
 			// Fly speed: 9
@@ -21,7 +22,8 @@ namespace DestroyerTest.Content.Equips.HeroSet
 			ArmorIDs.Wing.Sets.Stats[Item.wingSlot] = new WingStats(180, 16f, 0.5f);
 		}
 
-		public override void SetDefaults() {
+		public override void SetDefaults()
+		{
 			Item.width = 40;
 			Item.height = 36;
 			Item.value = 10000;
@@ -30,7 +32,8 @@ namespace DestroyerTest.Content.Equips.HeroSet
 		}
 
 		public override void VerticalWingSpeeds(Player player, ref float ascentWhenFalling, ref float ascentWhenRising,
-			ref float maxCanAscendMultiplier, ref float maxAscentMultiplier, ref float constantAscend) {
+			ref float maxCanAscendMultiplier, ref float maxAscentMultiplier, ref float constantAscend)
+		{
 			ascentWhenFalling = 3.0f; // Falling glide speed
 			ascentWhenRising = 3.0f; // Rising speed
 			maxCanAscendMultiplier = 1f;
@@ -38,15 +41,5 @@ namespace DestroyerTest.Content.Equips.HeroSet
 			constantAscend = 0.135f;
 		}
 
-		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
-		public override void AddRecipes() {
-			CreateRecipe()
-				.AddIngredient<CunifeBar>(8)
-                .AddIngredient(ItemID.Diamond, 12)
-                .AddIngredient(ItemID.Obsidian, 12)
-				.AddTile(TileID.Anvils)
-				.SortBefore(Main.recipe.First(recipe => recipe.createItem.wingSlot != -1)) // Places this recipe before any wing so every wing stays together in the crafting menu.
-				.Register();
-		}
 	}
 }

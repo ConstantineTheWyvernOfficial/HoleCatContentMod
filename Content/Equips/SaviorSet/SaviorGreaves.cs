@@ -3,9 +3,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using DestroyerTest.Content.Resources;
-using DestroyerTest.Content.MetallurgySeries;
 using DestroyerTest.Rarity;
-using DestroyerTest.Content.MetallurgySeries.TemperedAlloys;
 using DestroyerTest.Content.Tiles;
 
 namespace DestroyerTest.Content.Equips.SaviorSet
@@ -26,15 +24,5 @@ namespace DestroyerTest.Content.Equips.SaviorSet
 		public override void UpdateEquip(Player player) {
         }
 
-
-		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
-		public override void AddRecipes() {
-			CreateRecipe()
-				.AddIngredient<TemperedCunife>(5)
-                .AddIngredient<Item_TemperedObsidian>(7)
-                .AddIngredient(ItemID.ChlorophyteBar, 19)
-				.AddTile(TileID.MythrilAnvil)
-				.Register();
-		}
 	}
 }

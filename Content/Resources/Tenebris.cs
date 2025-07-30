@@ -1,5 +1,4 @@
 using System;
-using DestroyerTest.Content.MetallurgySeries;
 using DestroyerTest.Content.Resources;
 using DestroyerTest.Content.Tiles;
 using Microsoft.Xna.Framework;
@@ -12,7 +11,7 @@ using DestroyerTest.Rarity;
 using DestroyerTest.Content.Tiles.Riftplate;
 using DestroyerTest.Content.Tiles.Bars;
 
-namespace DestroyerTest.Content.MetallurgySeries
+namespace DestroyerTest.Content
 {
 	public class Tenebris : ModItem
 	{

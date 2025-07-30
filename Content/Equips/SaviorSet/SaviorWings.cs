@@ -9,7 +9,6 @@ using DestroyerTest.Content.MetallurgySeries;
 using DestroyerTest.Rarity;
 using DestroyerTest.Content.Equips.HeroSet;
 using DestroyerTest.Content.Tiles;
-using DestroyerTest.Content.MetallurgySeries.TemperedAlloys;
 
 namespace DestroyerTest.Content.Equips.SaviorSet
 {
@@ -39,17 +38,6 @@ namespace DestroyerTest.Content.Equips.SaviorSet
 			maxCanAscendMultiplier = 1f;
 			maxAscentMultiplier = 3f;
 			constantAscend = 0.135f;
-		}
-
-		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
-		public override void AddRecipes() {
-			CreateRecipe()
-				.AddIngredient<TemperedCunife>(16)
-                .AddIngredient<Item_TemperedObsidian>(6)
-                .AddIngredient(ItemID.ChlorophyteBar, 12)
-				.AddTile(TileID.MythrilAnvil)
-				.SortBefore(Main.recipe.First(recipe => recipe.createItem.wingSlot != -1)) // Places this recipe before any wing so every wing stays together in the crafting menu.
-				.Register();
 		}
 	}
 }

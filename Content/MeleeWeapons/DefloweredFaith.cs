@@ -6,6 +6,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using DestroyerTest.Rarity;
+using DestroyerTest.Content.Equips;
 
 
 
@@ -45,11 +46,10 @@ namespace DestroyerTest.Content.MeleeWeapons
 
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
 		public override void AddRecipes() {
-    	CreateRecipe()
-        	.AddIngredient<UnholySteel>(10)
-            .AddIngredient<Steel>(6)
-        	.AddIngredient(ItemID.CrimtaneBar, 8)
-        	.AddTile(TileID.Anvils) // Use the correct TileID name if 16 is Anvils
+			CreateRecipe()
+			.AddIngredient(ItemID.DemoniteBar, 8)
+			.AddIngredient<GildedCross>()
+        	.AddTile(TileID.Anvils)
         	.Register();
 		}		
 	}

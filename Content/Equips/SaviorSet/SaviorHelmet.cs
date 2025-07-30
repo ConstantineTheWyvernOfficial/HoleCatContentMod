@@ -1,6 +1,5 @@
 using System;
 using System.Configuration;
-using DestroyerTest.Content.MetallurgySeries;
 using DestroyerTest.Content.Resources;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -13,7 +12,6 @@ using Terraria.ModLoader;
 using DestroyerTest.Rarity;
 using DestroyerTest.Content.MeleeWeapons;
 using DestroyerTest.Content.Particles;
-using DestroyerTest.Content.MetallurgySeries.TemperedAlloys;
 using DestroyerTest.Content.Tiles;
 using InnoVault.PRT;
 
@@ -74,17 +72,6 @@ namespace DestroyerTest.Content.Equips.SaviorSet
         {
            player.armorEffectDrawOutlinesForbidden = true; // or whatever action you're trying to trigger
         }
-
-
-		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
-		public override void AddRecipes() {
-			CreateRecipe()
-				.AddIngredient<TemperedCunife>(5)
-                .AddIngredient<Item_TemperedObsidian>(12)
-                .AddIngredient(ItemID.ChlorophyteBar, 15)
-				.AddTile(TileID.MythrilAnvil)
-				.Register();
-		}
 	
 	}
 }

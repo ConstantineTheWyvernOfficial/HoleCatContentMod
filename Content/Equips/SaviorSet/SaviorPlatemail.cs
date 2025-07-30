@@ -4,7 +4,6 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using DestroyerTest.Rarity;
-using DestroyerTest.Content.MetallurgySeries.TemperedAlloys;
 using DestroyerTest.Content.Tiles;
 
 namespace DestroyerTest.Content.Equips.SaviorSet
@@ -39,15 +38,6 @@ namespace DestroyerTest.Content.Equips.SaviorSet
 			// Now, in case you might be asking "Why use that special default when you can just copy what the original Hallowed Plate Mail does?"
 			// Unfortunately for you, while cloning the defaults does load a cape on the back, it loads the Hallowed Armor cape, and replaces your body armor textures with the Hallowed Plate Mail Textures.
 			//Item.CloneDefaults(ItemID.HallowedPlateMail);
-		}
-
-		public override void AddRecipes() {
-			CreateRecipe()
-				.AddIngredient<TemperedCunife>(10)
-                .AddIngredient<Item_TemperedObsidian>(17)
-                .AddIngredient(ItemID.ChlorophyteBar, 25)
-				.AddTile(TileID.MythrilAnvil)
-				.Register();
 		}
 	}
 }

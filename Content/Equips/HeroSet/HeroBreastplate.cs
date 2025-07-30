@@ -38,14 +38,5 @@ namespace DestroyerTest.Content.Equips.HeroSet
 			// Unfortunately for you, while cloning the defaults does load a cape on the back, it loads the Hallowed Armor cape, and replaces your body armor textures with the Hallowed Plate Mail Textures.
 			//Item.CloneDefaults(ItemID.HallowedPlateMail);
 		}
-
-		public override void AddRecipes() //Added to make the item obtainable without needing cheat mods, since many swear by never using cheats, ever.
-		{
-			CreateRecipe()
-                .AddIngredient<CunifeBar>(15)
-                .AddIngredient(ItemID.Obsidian, 20)
-				.AddTile(TileID.Anvils)
-				.Register();
-		}
 	}
 }

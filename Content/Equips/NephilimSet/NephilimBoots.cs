@@ -22,16 +22,5 @@ namespace DestroyerTest.Content.Equips.NephilimSet
 			Item.defense = 6; // The amount of defense the item will give when equipped
 		}
 
-		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
-		public override void AddRecipes() {
-			CreateRecipe()
-				.AddIngredient<GermanSilver>(5)
-                .AddIngredient<WhiteCloth>(20)
-                .AddIngredient<BrownCloth>(16)
-                .AddIngredient<LifeEcho>(8)
-				.AddTile(TileID.Anvils)
-                .AddCondition(Condition.DownedSkeletron)
-				.Register();
-		}
 	}
 }
