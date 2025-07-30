@@ -3,6 +3,10 @@ using Terraria.ModLoader;
 using Terraria.ID;
 using Microsoft.Xna.Framework;
 using System;
+using InnoVault.PRT;
+using DestroyerTest.Content.Particles.TitaniumShard;
+using DestroyerTest.Content.Particles;
+using DestroyerTest.Common;
 
 namespace DestroyerTest.Content.Projectiles
 {
@@ -39,40 +43,47 @@ namespace DestroyerTest.Content.Projectiles
         {
             DustInterval++;
             // Create a dust perimeter (circle) around the projectile
-            int dustAmount = 24; // down from 52
-            if (DustInterval >= 30)
-            {
-                for (int d = 0; d < dustAmount; d++)
-                {
-                    float angle = MathHelper.TwoPi * d / dustAmount;
-                    Vector2 offset = new Vector2((float)Math.Cos(angle), (float)Math.Sin(angle)) * Radius;
-                    Vector2 dustPosition = Projectile.Center + offset;
-                    int dustIndex = Dust.NewDust(dustPosition, 0, 0, DustID.CursedTorch, 0f, 0f, 100, default, 0.8f);
-                    Main.dust[dustIndex].noGravity = false; // let gravity clean it up
-                    Main.dust[dustIndex].velocity *= 0.3f;
-                }
-                DustInterval = 0;
-            }
+            int dustAmount = 16; // down from 52
+            int[] types = new int[]
+                    {
+                        PRTLoader.GetParticleID<ColoredFire1>(),
+                        PRTLoader.GetParticleID<ColoredFire2>(),
+                        PRTLoader.GetParticleID<ColoredFire3>(),
+                        PRTLoader.GetParticleID<ColoredFire4>(),
+                        PRTLoader.GetParticleID<ColoredFire5>(),
+                        PRTLoader.GetParticleID<ColoredFire6>(),
+                        PRTLoader.GetParticleID<ColoredFire7>()
+                    };
+
+                    for (int i = 0; i < dustAmount; i++)
+                    {
+                        float angle = MathHelper.TwoPi * i / dustAmount;
+                        // Offset the angle each tick so the dust rotates around the circle over time
+                        float timeOffset = Main.GameUpdateCount * 0.1f; // Adjust speed as needed
+                        float dynamicAngle = angle + timeOffset;
+                        Vector2 dustPos = Projectile.Center + Radius * new Vector2((float)Math.Cos(dynamicAngle), (float)Math.Sin(dynamicAngle));
+                        PRTLoader.NewParticle(types[Main.rand.Next(types.Length)], dustPos, Vector2.Zero, ColorLib.CursedFlames, 1.0f);
+                    }
 
             // Check if any player is within the circular area
-                for (int i = 0; i < Main.maxPlayers; i++)
+            for (int i = 0; i < Main.maxPlayers; i++)
+            {
+                Player player = Main.player[i];
+                if (player.active && !player.dead)
                 {
-                    Player player = Main.player[i];
-                    if (player.active && !player.dead)
+                    float distance = Vector2.Distance(player.Center, Projectile.Center);
+                    if (distance <= Radius)
                     {
-                        float distance = Vector2.Distance(player.Center, Projectile.Center);
-                        if (distance <= Radius)
-                        {
-                            // Good: applies every frame but doesn't multiply infinitely
-                            player.manaRegenBonus += 2;
-                            player.lifeRegen += 2; // this is already a strong regen
+                        // Good: applies every frame but doesn't multiply infinitely
+                        player.manaRegenBonus += 2;
+                        player.lifeRegen += 2; // this is already a strong regen
 
-                            // Avoid *= inside AI. You can give a timed buff instead or use a ModPlayer flag.
-                            player.GetDamage(DamageClass.Generic) += 0.1f;
-                        }
-
+                        // Avoid *= inside AI. You can give a timed buff instead or use a ModPlayer flag.
+                        player.GetDamage(DamageClass.Generic) += 0.1f;
                     }
+
                 }
+            }
             // Gravity
             if (Projectile.velocity.Y < 10f)
                 Projectile.velocity.Y += 0.4f;

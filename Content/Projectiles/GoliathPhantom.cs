@@ -63,7 +63,7 @@ namespace DestroyerTest.Content.Projectiles
 		public override bool PreDraw(ref Color lightColor)
 		{
 			if (!Projectile.active || Projectile.timeLeft <= 0)
-			return false;
+				return false;
 			// Draws an afterimage trail. See https://github.com/tModLoader/tModLoader/wiki/Basic-Projectile#afterimage-trail for more information.
 
 			//var effect = distortion;
@@ -213,9 +213,28 @@ namespace DestroyerTest.Content.Projectiles
 
 		public override void OnHitPlayer(Player target, Player.HurtInfo info)
 		{
-			Main.NewText("HitPlayer");
 			SoundEngine.PlaySound(Hit, target.Center);
 			Projectile.active = false;
+		}
+
+        public override void ModifyHitPlayer(Player target, ref Player.HurtModifiers modifiers)
+		{
+			int activeCount = 0;
+
+			for (int i = 0; i < Main.maxProjectiles; i++)
+			{
+				Projectile proj = Main.projectile[i];
+				if (proj.active && proj.type == Projectile.type && proj.owner == Projectile.owner)
+				{
+					activeCount++;
+				}
+			}
+
+			if (activeCount > 0)
+			{
+				float scale = 1f / activeCount;
+				modifiers.SourceDamage *= scale;
+			}
 		}
 
 		
