@@ -37,13 +37,11 @@ namespace DestroyerTest.Content.Projectiles
 
         public int Radius;
 
-        public int DustInterval = 30;
-
         public override void AI()
         {
-            DustInterval++;
+
             // Create a dust perimeter (circle) around the projectile
-            int dustAmount = 16; // down from 52
+            int dustAmount = 6;
             int[] types = new int[]
                     {
                         PRTLoader.GetParticleID<ColoredFire1>(),
@@ -55,35 +53,26 @@ namespace DestroyerTest.Content.Projectiles
                         PRTLoader.GetParticleID<ColoredFire7>()
                     };
 
-                    for (int i = 0; i < dustAmount; i++)
-                    {
-                        float angle = MathHelper.TwoPi * i / dustAmount;
-                        // Offset the angle each tick so the dust rotates around the circle over time
-                        float timeOffset = Main.GameUpdateCount * 0.1f; // Adjust speed as needed
-                        float dynamicAngle = angle + timeOffset;
-                        Vector2 dustPos = Projectile.Center + Radius * new Vector2((float)Math.Cos(dynamicAngle), (float)Math.Sin(dynamicAngle));
-                        PRTLoader.NewParticle(types[Main.rand.Next(types.Length)], dustPos, Vector2.Zero, ColorLib.CursedFlames, 1.0f);
-                    }
-
-            // Check if any player is within the circular area
-            for (int i = 0; i < Main.maxPlayers; i++)
+            for (int i = 0; i < dustAmount; i++)
             {
-                Player player = Main.player[i];
-                if (player.active && !player.dead)
+                float angle = MathHelper.TwoPi * i / dustAmount;
+                // Offset the angle each tick so the dust rotates around the circle over time
+                float timeOffset = Main.GameUpdateCount * 0.6f; // Adjust speed as needed
+                float dynamicAngle = angle + timeOffset;
+                Vector2 dustPos = Projectile.Center + Radius * new Vector2((float)Math.Cos(dynamicAngle), (float)Math.Sin(dynamicAngle));
+                PRTLoader.NewParticle(types[Main.rand.Next(types.Length)], dustPos, Vector2.Zero, ColorLib.CursedFlames, 1.0f);
+            }
+
+            float radiusSq = Radius * Radius;
+            foreach (Player player in Main.player)
+            {
+                if (player.active && !player.dead && Vector2.DistanceSquared(player.Center, Projectile.Center) <= radiusSq)
                 {
-                    float distance = Vector2.Distance(player.Center, Projectile.Center);
-                    if (distance <= Radius)
-                    {
-                        // Good: applies every frame but doesn't multiply infinitely
-                        player.manaRegenBonus += 2;
-                        player.lifeRegen += 2; // this is already a strong regen
-
-                        // Avoid *= inside AI. You can give a timed buff instead or use a ModPlayer flag.
-                        player.GetDamage(DamageClass.Generic) += 0.1f;
-                    }
-
+                    MiniRoseLifeRegenPlayer modPlayer = player.GetModPlayer<MiniRoseLifeRegenPlayer>();
+                    modPlayer.Active = true;
                 }
             }
+
             // Gravity
             if (Projectile.velocity.Y < 10f)
                 Projectile.velocity.Y += 0.4f;
@@ -93,12 +82,21 @@ namespace DestroyerTest.Content.Projectiles
             {
                 int tileX = (int)((Projectile.position.X + Projectile.width / 2) / 16f);
                 int tileY = (int)((Projectile.position.Y + Projectile.height) / 16f);
-                if (WorldGen.SolidTile(Main.tile[tileX, tileY]))
+
+                Tile tile = Main.tile[tileX, tileY];
+                if (tile != null && tile.HasTile)
                 {
-                    Projectile.velocity.Y = 0f;
-                    Projectile.position.Y = tileY * 16 - Projectile.height;
+                    bool isSolid = WorldGen.SolidTile(tile);
+                    bool isPlatform = TileID.Sets.Platforms[tile.TileType] && !tile.IsHalfBlock && tile.Slope == 0;
+
+                    if (isSolid || isPlatform)
+                    {
+                        Projectile.velocity.Y = 0f;
+                        Projectile.position.Y = tileY * 16 - Projectile.height;
+                    }
                 }
             }
+
         }
 
         public override bool OnTileCollide(Vector2 oldVelocity)
@@ -110,5 +108,19 @@ namespace DestroyerTest.Content.Projectiles
             }
             return false;
         }
+    }
+
+    public class MiniRoseLifeRegenPlayer : ModPlayer
+    {
+        public bool Active = false;
+        public override void UpdateLifeRegen()
+        {
+            if (Active == true)
+            {
+                Player.lifeRegen += 20;
+                Player.manaRegen += 20;
+            }
+        }
+
     }
 }
