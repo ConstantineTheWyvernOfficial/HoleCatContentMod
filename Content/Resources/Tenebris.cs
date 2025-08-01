@@ -10,9 +10,6 @@ using Terraria.ModLoader;
 using DestroyerTest.Rarity;
 using DestroyerTest.Content.Tiles.Riftplate;
 
-
-
-
 namespace DestroyerTest.Content.Resources
 {
 	public class Tenebris : ModItem
