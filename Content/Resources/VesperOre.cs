@@ -1,8 +1,9 @@
+using DestroyerTest.Content.Tiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DestroyerTest.Content.Tiles
+namespace DestroyerTest.Content.Resources
 {
 	public class VesperOre : ModItem
 	{

@@ -2792,6 +2792,16 @@ Items: {
 		Tooltip: ""
 		DisplayName: Wyvern Skull Rose
 	}
+
+	Vesper: {
+		DisplayName: Vesper
+		Tooltip: ""
+	}
+
+	VesperOre: {
+		DisplayName: Vesper Ore
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
@@ -3372,6 +3382,8 @@ Tiles: {
 		MapEntry1: Mods.DestroyerTest.Tiles.Tile_RiftCache.MapEntry1
 		MapEntry0: Mods.DestroyerTest.Tiles.Tile_RiftCache.MapEntry0
 	}
+
+	Tile_VesperOre.MapEntry: Tile_ Vesper Ore
 }
 
 Biomes: {
@@ -3389,6 +3401,8 @@ Biomes: {
 WorldGen: {
 	HelicitePassMessage: Putting the sky deep underground...
 	BlessedWithHeliciteMessage: Radiant Fragments of solar energy embed themselves in the rocks near to hell!
+	VesperOrePassMessage: Mods.DestroyerTest.WorldGen.VesperOrePassMessage
+	BlessedWithVesperOreMessage: Mods.DestroyerTest.WorldGen.BlessedWithVesperOreMessage
 }
 
 Emotes: {

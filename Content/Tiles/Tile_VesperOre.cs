@@ -34,7 +34,7 @@ namespace DestroyerTest.Content.Tiles
             VanillaFallbackOnModDeletion = TileID.Silver;
             HitSound = SoundID.Tink;
             MineResist = 1.5f;
-            MinPick = 50;
+            MinPick = 10;
         }
 
         // Example of how to enable the Biome Sight buff to highlight this tile. Biome Sight is technically intended to show "infected" tiles, so this example is purely for demonstration purposes.
@@ -90,7 +90,7 @@ namespace DestroyerTest.Content.Tiles
 				}
 
 				// 100 controls how many splotches of ore are spawned into the world, scaled by world size. For comparison, the first 3 times altars are smashed about 275, 190, or 120 splotches of the respective hardmode ores are spawned. 
-				int splotches = (int)(100 * (Main.maxTilesX / 4200f));
+				int splotches = (int)(200 * (Main.maxTilesX / 4200f));
                 int highestY = (int)Main.rockLayer - 200;
 				for (int iteration = 0; iteration < splotches; iteration++) {
 					// Find a point in the lower half of the rock layer but above the underworld depth.
