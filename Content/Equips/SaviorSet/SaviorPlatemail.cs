@@ -1,4 +1,4 @@
-using DestroyerTest.Content.MetallurgySeries;
+  
 using DestroyerTest.Content.Resources;
 using Terraria;
 using Terraria.ID;

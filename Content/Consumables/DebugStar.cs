@@ -1,6 +1,5 @@
 
 using DestroyerTest.Content.Entity;
-using DestroyerTest.Content.MetallurgySeries.QuestAlloys;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
@@ -64,13 +63,6 @@ namespace DestroyerTest.Content.Consumables
 			}
 
 			return true;
-		}
-
-		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
-		public override void AddRecipes() {
-			CreateRecipe()
-				.AddIngredient<ExoticAlloy>()
-				.Register();
 		}
 	}
 }

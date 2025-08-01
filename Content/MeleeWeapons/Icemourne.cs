@@ -7,7 +7,6 @@ using Terraria.ModLoader;
 using Terraria.DataStructures;
 using static Terraria.ModLoader.ModContent;
 using DestroyerTest.Content.Projectiles;
-using DestroyerTest.Content.MetallurgySeries; // Add this line if CT3_Swing is in the Projectiles namespace
 
 namespace DestroyerTest.Content.MeleeWeapons
 {
@@ -62,7 +61,6 @@ namespace DestroyerTest.Content.MeleeWeapons
 			CreateRecipe()
 				.AddIngredient(ItemID.IronBar, 6)
                 .AddIngredient(ItemID.IceBlock, 25)
-                .AddIngredient<Steel>(4)
 				.AddTile(TileID.MythrilAnvil)
 				.Register();
 		}

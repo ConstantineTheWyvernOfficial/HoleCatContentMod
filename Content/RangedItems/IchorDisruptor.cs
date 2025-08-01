@@ -1,5 +1,5 @@
 using System;
-using DestroyerTest.Content.MetallurgySeries;
+  
 using DestroyerTest.Content.Projectiles;
 using DestroyerTest.Content.Projectiles.AmmoProjectiles;
 using Microsoft.Xna.Framework;
@@ -53,7 +53,6 @@ namespace DestroyerTest.Content.RangedItems
 		public override void AddRecipes() {
 			CreateRecipe()
 				.AddIngredient(ItemID.Ichor, 6)
-                .AddIngredient<Steel>(13)
 				.AddTile(TileID.MythrilAnvil)
 				.Register();
 		}

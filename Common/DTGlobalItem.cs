@@ -7,7 +7,6 @@ using Microsoft.Xna.Framework;
 using ReLogic.Graphics;
 using Terraria.GameContent;
 using Terraria.UI.Chat;
-using DestroyerTest.Content.MetallurgySeries;
 using DestroyerTest.Content.Resources;
 using DestroyerTest.Content.MeleeWeapons;
 using DestroyerTest.Content.Buffs;
@@ -693,8 +692,7 @@ namespace DestroyerTest.Common
             return entity.type == ModContent.ItemType<ConstantineScythe>() ||
             entity.type == ModContent.ItemType<ConstantineMask>() ||
             entity.type == ModContent.ItemType<CoatStantine>() ||
-            entity.type == ModContent.ItemType<ConstanJeans>() ||
-            entity.type == ModContent.ItemType<DamascusRipper>();
+            entity.type == ModContent.ItemType<ConstanJeans>();
         }
 
         public override void SetDefaults(Item item)
@@ -702,8 +700,7 @@ namespace DestroyerTest.Common
             if (item.type == ModContent.ItemType<ConstantineScythe>() ||
             item.type == ModContent.ItemType<ConstantineMask>() ||
             item.type == ModContent.ItemType<CoatStantine>() ||
-            item.type == ModContent.ItemType<ConstanJeans>() ||
-            item.type == ModContent.ItemType<DamascusRipper>())
+            item.type == ModContent.ItemType<ConstanJeans>())
             {
                 item.GetGlobalItem<DevItems>().isDevItem = true;
             }
@@ -808,30 +805,6 @@ namespace DestroyerTest.Common
             entity.type == ModContent.ItemType<BlackCloth>() ||
             entity.type == ModContent.ItemType<BrownCloth>() ||
             entity.type == ModContent.ItemType<WhiteCloth>();
-        }
-
-        public override void SetDefaults(Item item)
-        {
-        }
-    }
-
-    public class CopperAlloys : GlobalItem
-    {
-        public override bool InstancePerEntity => true;
-        public override bool AppliesToEntity(Item entity, bool lateInstantiation)
-        {
-            // Apply this GlobalItem to specific items based on criteria
-            return entity.type == ModContent.ItemType<AluminumBronze>() ||
-            entity.type == ModContent.ItemType<BerylliumCopper>() ||
-            entity.type == ModContent.ItemType<CartridgeBrass>() ||
-            entity.type == ModContent.ItemType<CunifeBar>() ||
-            entity.type == ModContent.ItemType<CuproNickel>() ||
-            entity.type == ModContent.ItemType<GermanSilver>() ||
-            entity.type == ModContent.ItemType<GildingMetal>() ||
-            entity.type == ModContent.ItemType<ManganeseBronze>() ||
-            entity.type == ModContent.ItemType<MuntzMetal>() ||
-            entity.type == ModContent.ItemType<NavalBrass>() ||
-            entity.type == ModContent.ItemType<PhosphorBronze>();
         }
 
         public override void SetDefaults(Item item)

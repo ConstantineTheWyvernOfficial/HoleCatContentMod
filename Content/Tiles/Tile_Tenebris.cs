@@ -4,9 +4,9 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace DestroyerTest.Content.Tiles.Bars
+namespace DestroyerTest.Content.Tiles
 {
-	public class Tile_AluminumBronze : ModTile
+	public class Tile_Tenebris : ModTile
 	{
 		public override void SetStaticDefaults() {
 			Main.tileShine[Type] = 1100;
@@ -19,7 +19,7 @@ namespace DestroyerTest.Content.Tiles.Bars
 			TileObjectData.newTile.LavaDeath = false;
 			TileObjectData.addTile(Type);
 
-			AddMapEntry(new Color(100, 100, 100), Language.GetText("Aluminum Bronze")); // localized text for "Metal Bar"
+			AddMapEntry(new Color(0, 0, 0), Language.GetText("Tenebris")); // localized text for "Metal Bar"
 		}
 	}
 }

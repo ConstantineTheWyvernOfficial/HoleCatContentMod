@@ -6,7 +6,6 @@ using Terraria.ModLoader;
 using DestroyerTest.Content.Tiles;
 using DestroyerTest.Content.Resources;
 using DestroyerTest.Rarity;
-using DestroyerTest.Content.MetallurgySeries;
 
 namespace DestroyerTest.Content.Equips
 {

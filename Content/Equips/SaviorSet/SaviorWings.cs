@@ -5,7 +5,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using DestroyerTest.Content.Resources;
-using DestroyerTest.Content.MetallurgySeries;
+  
 using DestroyerTest.Rarity;
 using DestroyerTest.Content.Equips.HeroSet;
 using DestroyerTest.Content.Tiles;

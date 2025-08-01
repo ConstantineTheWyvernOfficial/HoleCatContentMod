@@ -9,9 +9,11 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using DestroyerTest.Rarity;
 using DestroyerTest.Content.Tiles.Riftplate;
-using DestroyerTest.Content.Tiles.Bars;
 
-namespace DestroyerTest.Content
+
+
+
+namespace DestroyerTest.Content.Resources
 {
 	public class Tenebris : ModItem
 	{

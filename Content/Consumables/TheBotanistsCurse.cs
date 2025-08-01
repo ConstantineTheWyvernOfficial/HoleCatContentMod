@@ -1,6 +1,5 @@
 
 using DestroyerTest.Content.Entity;
-using DestroyerTest.Content.MetallurgySeries.QuestAlloys;
 using DestroyerTest.Rarity;
 using Terraria;
 using Terraria.Audio;

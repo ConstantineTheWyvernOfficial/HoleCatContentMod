@@ -9,8 +9,7 @@ using Terraria.ModLoader;
 using DestroyerTest.Rarity;
 using DestroyerTest.Content.Tiles.Riftplate;
 using DestroyerTest.Common;
-using DestroyerTest.Content.MetallurgySeries;
-using DestroyerTest.Content.MetallurgySeries.TemperedAlloys;
+
 
 namespace DestroyerTest.Content.Equips
 {
@@ -51,15 +50,5 @@ namespace DestroyerTest.Content.Equips
             player.GetDamage(ModContent.GetInstance<ScepterClass>()) *= 1.10f;
             ScepterClassStats.Range += 2;
         }
-
-		public override void AddRecipes() {
-			CreateRecipe()
-				.AddIngredient<TemperedBerylliumCopper>(2)
-                .AddIngredient<TemperedSteel>(4)
-				.AddTile(TileID.Anvils)
-                .AddCondition(Condition.DownedEowOrBoc)
-				.Register();
-            
-		}
 	}
 }

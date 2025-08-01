@@ -1,6 +1,5 @@
 using DestroyerTest.Content.Buffs;
 using DestroyerTest.Content.MeleeWeapons;
-using DestroyerTest.Content.MetallurgySeries;
 using DestroyerTest.Content.Particles;
 using DestroyerTest.Content.Resources;
 using DestroyerTest.Content.Resources.Cloths;

@@ -67,7 +67,6 @@ namespace DestroyerTest.Content.Resources
                 .AddIngredient(ItemID.Sapphire)
                 .AddIngredient(ItemID.Diamond)
                 .AddIngredient(ItemID.Emerald)
-                .AddTile<Tile_Crucible>()
                 .Register();
         }
     }

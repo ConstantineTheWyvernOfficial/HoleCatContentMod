@@ -6,7 +6,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using DestroyerTest.Content.Projectiles;
-using DestroyerTest.Content.MetallurgySeries;
+  
 
 namespace DestroyerTest.Content.MeleeWeapons.SwordLineage
 {
@@ -61,7 +61,6 @@ namespace DestroyerTest.Content.MeleeWeapons.SwordLineage
 				.AddIngredient(ItemID.MeteoriteBar, 10)
 				.AddIngredient(ItemID.DemoniteBar, 16)
 				.AddIngredient(ItemID.SoulofNight, 8)
-				.AddIngredient(ModContent.ItemType<Steel>(), 12)
 			.AddIngredient(ModContent.ItemType<Constitution>(), 1)
         	.AddTile(TileID.MythrilAnvil) // Use the correct TileID name if 16 is Anvils
         	.Register();

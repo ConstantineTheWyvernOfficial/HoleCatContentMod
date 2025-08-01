@@ -1,6 +1,5 @@
 
 using DestroyerTest.Content.MeleeWeapons;
-using DestroyerTest.Content.MetallurgySeries;
 using DestroyerTest.Content.Resources.Cloths;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -158,7 +157,6 @@ namespace DestroyerTest.Content.Entity
 		public override void OnSpawn(IEntitySource source) {
 			if(source is EntitySource_SpawnNPC) {
 				// A TownNPC is "unlocked" once it successfully spawns into the world.
-				TownNPCRespawnSystem.unlockedProspectorSpawn = true;
 			}
 		}
 

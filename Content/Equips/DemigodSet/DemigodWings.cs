@@ -5,7 +5,6 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using DestroyerTest.Content.Resources;
-using DestroyerTest.Content.MetallurgySeries;
 
 namespace DestroyerTest.Content.Equips.DemigodSet
 {

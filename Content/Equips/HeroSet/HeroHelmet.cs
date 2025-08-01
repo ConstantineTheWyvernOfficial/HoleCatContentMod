@@ -1,6 +1,6 @@
 using System;
 using System.Configuration;
-using DestroyerTest.Content.MetallurgySeries;
+
 using DestroyerTest.Content.Resources;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;

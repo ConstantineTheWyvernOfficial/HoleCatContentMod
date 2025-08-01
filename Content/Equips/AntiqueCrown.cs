@@ -9,7 +9,6 @@ using Terraria.ModLoader;
 using DestroyerTest.Rarity;
 using DestroyerTest.Content.Tiles.Riftplate;
 using DestroyerTest.Common;
-using DestroyerTest.Content.MetallurgySeries;
 
 namespace DestroyerTest.Content.Equips
 {

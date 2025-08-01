@@ -1,5 +1,6 @@
 
-using DestroyerTest.Content.MetallurgySeries;
+
+using DestroyerTest.Content.Resources;
 using DestroyerTest.Content.Resources.Cloths;
 using Terraria;
 using Terraria.ID;

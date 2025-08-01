@@ -15,7 +15,7 @@ using DestroyerTest.Content.Tools;
 using System.Collections.Generic;
 using DestroyerTest.Content.RiftArsenalNoCharge;
 using Terraria.Localization;
-using DestroyerTest.Content.MetallurgySeries;
+  
 
 namespace DestroyerTest.Content.RangedItems
 {

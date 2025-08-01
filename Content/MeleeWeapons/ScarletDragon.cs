@@ -1,4 +1,4 @@
-using DestroyerTest.Content.MetallurgySeries;
+
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Audio;
@@ -43,14 +43,5 @@ namespace DestroyerTest.Content.MeleeWeapons
             player.AddBuff(BuffID.Lifeforce, 360);
 		}
 
-		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
-		public override void AddRecipes() {
-    	CreateRecipe()
-        	.AddIngredient<WretchedSteel>(10)
-            .AddIngredient<Steel>(6)
-        	.AddIngredient(ItemID.CrimtaneBar, 8)
-        	.AddTile(TileID.Anvils) // Use the correct TileID name if 16 is Anvils
-        	.Register();
-		}		
 	}
 }

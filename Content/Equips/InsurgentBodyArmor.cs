@@ -5,10 +5,10 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using DestroyerTest.Content.Tiles;
 using DestroyerTest.Content.Resources;
-using DestroyerTest.Content.MetallurgySeries;
+
 using DestroyerTest.Content.Resources.Cloths;
 using DestroyerTest.Rarity;
-using DestroyerTest.Content.MetallurgySeries.TemperedAlloys;
+
 
 namespace DestroyerTest.Content.Equips
 {
@@ -23,15 +23,6 @@ namespace DestroyerTest.Content.Equips
 			Item.value = Item.sellPrice(gold: 1); // How many coins the item is worth
 			Item.rare = ModContent.RarityType<ScepterArmorPHMRarity>(); // The rarity of the item
 			Item.defense = 8; // The amount of defense the item will give when equipped
-		}
-        
-		public override void AddRecipes() {
-			CreateRecipe()
-				.AddIngredient<TemperedBerylliumCopper>(9)
-                .AddIngredient<TemperedSteel>(6)
-				.AddTile(TileID.Anvils)
-                .AddCondition(Condition.DownedEowOrBoc)
-				.Register();
 		}
 	}
 }

@@ -34,7 +34,6 @@ namespace DestroyerTest.Content.Magic.ScepterSubclass
         
 		public override void AddRecipes() {
 			CreateRecipe()
-				.AddIngredient<RiftplateWire>(12)
                 .AddIngredient<Living_Shadow>(50)
                 .AddIngredient<ShadowCircuitry>(2)
                 .AddTile<Tile_RiftConfiguratorWeaponry>()

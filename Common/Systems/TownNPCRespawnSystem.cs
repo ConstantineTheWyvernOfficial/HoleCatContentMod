@@ -11,7 +11,6 @@ namespace DestroyerTest.Common.Systems
 	public class TownNPCRespawnSystem : ModSystem
 	{
 		// Tracks if ExamplePerson has ever been spawned in this world
-		public static bool unlockedProspectorSpawn = false;
 		public static bool unlockedEimvurSpawn = false;
 
 		// Town NPC rescued in the world would follow a similar implementation, the only difference being how the value is set to true.
@@ -19,36 +18,36 @@ namespace DestroyerTest.Common.Systems
 
 		public override void ClearWorld()
 		{
-			unlockedProspectorSpawn = false;
+			
 			unlockedEimvurSpawn = false;
 		}
 
 		public override void SaveWorldData(TagCompound tag)
 		{
-			tag[nameof(unlockedProspectorSpawn)] = unlockedProspectorSpawn;
+			
 			tag[nameof(unlockedEimvurSpawn)] = unlockedEimvurSpawn;
 		}
 
 		public override void LoadWorldData(TagCompound tag)
 		{
-			unlockedProspectorSpawn = tag.GetBool(nameof(unlockedProspectorSpawn));
+			
 			unlockedEimvurSpawn = tag.GetBool(nameof(unlockedEimvurSpawn));
 
 			// This line sets unlockedProspectorSpawn to true if an ExamplePerson is already in the world. This is only needed because unlockedProspectorSpawn was added in an update to this mod, meaning that existing users might have unlockedProspectorSpawn incorrectly set to false.
 			// If you are tracking Town NPC unlocks from your initial mod release, then this isn't necessary.
-			unlockedProspectorSpawn |= NPC.AnyNPCs(ModContent.NPCType<Prospector>());
+		
 			unlockedEimvurSpawn |= NPC.AnyNPCs(ModContent.NPCType<EimvurNPC>());
 		}
 
 		public override void NetSend(BinaryWriter writer)
 		{
-			writer.WriteFlags(unlockedProspectorSpawn);
+			
 			writer.WriteFlags(unlockedEimvurSpawn);
 		}
 
 		public override void NetReceive(BinaryReader reader)
 		{
-			reader.ReadFlags(out unlockedProspectorSpawn);
+			
 			reader.ReadFlags(out unlockedEimvurSpawn);
 		}
 	}

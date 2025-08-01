@@ -3,7 +3,6 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using DestroyerTest.Content.Resources;
-using DestroyerTest.Content.MetallurgySeries;
 using DestroyerTest.Rarity;
 using System.Numerics;
 using DestroyerTest.Content.Dusts;

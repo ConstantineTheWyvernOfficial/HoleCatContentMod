@@ -8,7 +8,7 @@ using Terraria.DataStructures;
 using static Terraria.ModLoader.ModContent;
 using DestroyerTest.Content.Projectiles;
 using DestroyerTest.Common;
-using DestroyerTest.Content.MetallurgySeries;
+  
 using DestroyerTest.Content.Resources;
 
 namespace DestroyerTest.Content.Magic.ScepterSubclass

@@ -13,7 +13,6 @@ using DestroyerTest.Content.Dusts;
 using Terraria.ID;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using DestroyerTest.Content.MetallurgySeries;
 using Terraria.GameContent.UI;
 using DestroyerTest.Content.Magic;
 using DestroyerTest.Common;

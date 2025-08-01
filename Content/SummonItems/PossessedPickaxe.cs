@@ -247,7 +247,7 @@ namespace DestroyerTest.Content.SummonItems
 					}
 			}
 			Player owner = Main.player[Projectile.owner];
-			NPC prospector = Main.npc.FirstOrDefault(n => n.active && n.type == ModContent.NPCType<Prospector>());
+			
 
 			switch (state)
 			{
@@ -259,31 +259,7 @@ namespace DestroyerTest.Content.SummonItems
 					break;
 
 				case MinionState.Orbiting:
-					if (prospector != null && Vector2.Distance(owner.Center, prospector.Center) < 500f && DTUtils.PromiseEquipped == false)
-					{
-						CombatText.NewText(Projectile.Hitbox, Color.IndianRed, "RAH! YOU! LEMME AT HIM! LEMME AT HIM!", true);
-						Projectile.hostile = true;
-						Projectile.friendly = false;
-						state = MinionState.Attacking;
-						SoundEngine.PlaySound(SoundID.Item119);
-					}
-					else
-					{
-						DoOrbit(owner);
-					}
-					break;
-
-				case MinionState.Attacking:
-					if (prospector == null || !prospector.active)
-					{
-						Projectile.hostile = false;
-						Projectile.friendly = true;
-						state = MinionState.Orbiting;
-						break;
-					}
-
-					Vector2 attackVel = (prospector.Center - Projectile.Center).SafeNormalize(Vector2.UnitX) * 10f;
-					Projectile.velocity = Vector2.Lerp(Projectile.velocity, attackVel, 0.1f); // homing
+					DoOrbit(owner);
 					break;
 			}
 			CheckActive(owner);

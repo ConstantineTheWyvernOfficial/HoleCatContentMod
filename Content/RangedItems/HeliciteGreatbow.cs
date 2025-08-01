@@ -1,5 +1,5 @@
 using System.Security.Permissions;
-using DestroyerTest.Content.MetallurgySeries;
+  
 using DestroyerTest.Content.Projectiles;
 using DestroyerTest.Content.Projectiles.AmmoProjectiles;
 using DestroyerTest.Content.Tiles;
@@ -55,7 +55,6 @@ namespace DestroyerTest.Content.RangedItems
 			CreateRecipe()
 				.AddIngredient<Item_Riftplate>(16)
                 .AddIngredient<Item_HeliciteCrystal>(6)
-				.AddIngredient<RiftplateWire>(6)
 				.AddTile(TileID.Anvils)
 				.Register();
 		}

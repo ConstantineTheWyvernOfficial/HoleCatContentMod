@@ -1,4 +1,4 @@
-using DestroyerTest.Content.MetallurgySeries;
+
 using DestroyerTest.Content.Projectiles;
 using DestroyerTest.Content.Resources;
 using DestroyerTest.Content.Resources.Cloths;
@@ -44,8 +44,6 @@ namespace DestroyerTest.Content.MeleeWeapons
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
 		public override void AddRecipes() {
 			CreateRecipe()
-				.AddIngredient<GermanSilver>(12)
-                .AddIngredient<BabylonianPlates>(6)
                 .AddIngredient<WhiteCloth>(4)
                 .AddIngredient(ItemID.Cobweb, 2)
 				.AddTile(TileID.Anvils)

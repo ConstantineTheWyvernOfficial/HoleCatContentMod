@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using DestroyerTest.Content.Resources;
-using DestroyerTest.Content.MetallurgySeries;
+
 using DestroyerTest.Rarity;
 
 namespace DestroyerTest.Content.Equips.HeroSet

@@ -6,7 +6,6 @@ using DestroyerTest.Content.Tiles;
 using DestroyerTest.Content.Resources;
 using DestroyerTest.Rarity;
 using DestroyerTest.Content.Tiles.Riftplate;
-using DestroyerTest.Content.MetallurgySeries;
 using DestroyerTest.Content.Resources.Cloths;
 
 namespace DestroyerTest.Content.Equips

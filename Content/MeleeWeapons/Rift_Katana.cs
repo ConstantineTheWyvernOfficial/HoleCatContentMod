@@ -9,7 +9,6 @@ using DestroyerTest.Content.Buffs;
 using DestroyerTest.Content.Projectiles;
 using DestroyerTest.Content.Tiles;
 using DestroyerTest.Content.Resources;
-using DestroyerTest.Content.MetallurgySeries;
 using DestroyerTest.Content.Dusts;
 using DestroyerTest.Rarity;
 using Terraria.GameInput;

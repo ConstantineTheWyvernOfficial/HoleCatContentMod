@@ -1,4 +1,4 @@
-using DestroyerTest.Content.MetallurgySeries;
+  
 using DestroyerTest.Content.Resources.Cloths;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -29,7 +29,6 @@ namespace DestroyerTest.Content.Resources
 		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
 		public override void AddRecipes() {
 			CreateRecipe()
-				.AddIngredient<CunifeBar>(5)
                 .AddIngredient(ItemID.Ruby, 1)
                 .AddIngredient<RedCloth>(3)
                 .AddIngredient(ItemID.Cobweb, 2)

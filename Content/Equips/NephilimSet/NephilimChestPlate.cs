@@ -5,7 +5,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using DestroyerTest.Content.Tiles;
 using DestroyerTest.Content.Resources;
-using DestroyerTest.Content.MetallurgySeries;
+
 using DestroyerTest.Content.Resources.Cloths;
 
 namespace DestroyerTest.Content.Equips.NephilimSet

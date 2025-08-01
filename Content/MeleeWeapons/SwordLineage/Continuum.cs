@@ -6,7 +6,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using DestroyerTest.Content.Projectiles;
-using DestroyerTest.Content.MetallurgySeries;
+  
 using DestroyerTest.Content.Resources;
 using DestroyerTest.Content.Tiles;
 

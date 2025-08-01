@@ -1,4 +1,4 @@
-using DestroyerTest.Content.MetallurgySeries;
+  
 using DestroyerTest.Content.Projectiles;
 using DestroyerTest.Content.Resources;
 using Microsoft.Xna.Framework;
@@ -51,7 +51,6 @@ namespace DestroyerTest.Content.MeleeWeapons
 		public override void AddRecipes() {
 			CreateRecipe()
 				.AddIngredient<Laevateinn>(1)
-                .AddIngredient<ColdSnapSteel>(6)
                 .AddIngredient(ItemID.BrokenHeroSword, 1)
 				.AddTile(TileID.Anvils)
 				.Register();

@@ -1,4 +1,4 @@
-using DestroyerTest.Content.MetallurgySeries;
+  
 using DestroyerTest.Content.Projectiles;
 using DestroyerTest.Content.Resources;
 using DestroyerTest.Content.Resources.Cloths;
@@ -52,8 +52,6 @@ namespace DestroyerTest.Content.MeleeWeapons
 
 		public override void AddRecipes() {
 			CreateRecipe()
-				.AddIngredient<ColdSnapSteel>(6)
-                .AddIngredient<EvermoltenSteel>(6)
                 .AddIngredient(ItemID.WandofSparking)
 				.AddIngredient(ItemID.WandofFrosting)
 				.AddIngredient(ItemID.SoulofMight, 12)

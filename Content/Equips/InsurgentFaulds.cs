@@ -6,7 +6,6 @@ using DestroyerTest.Content.Tiles;
 using DestroyerTest.Content.Resources;
 using DestroyerTest.Rarity;
 using DestroyerTest.Content.Tiles.Riftplate;
-using DestroyerTest.Content.MetallurgySeries.TemperedAlloys;
 
 namespace DestroyerTest.Content.Equips
 {
@@ -24,16 +23,6 @@ namespace DestroyerTest.Content.Equips
 		}
 
 		public override void UpdateEquip(Player player) {
-		}
-
-		// Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
-		public override void AddRecipes() {
-			CreateRecipe()
-				.AddIngredient<TemperedBerylliumCopper>(4)
-                .AddIngredient<TemperedSteel>(6)
-				.AddTile(TileID.Anvils)
-                .AddCondition(Condition.DownedEowOrBoc)
-				.Register();
 		}
 	}
 }

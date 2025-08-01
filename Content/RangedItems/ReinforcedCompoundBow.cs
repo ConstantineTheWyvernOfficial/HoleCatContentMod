@@ -1,5 +1,5 @@
 using System.Security.Permissions;
-using DestroyerTest.Content.MetallurgySeries;
+  
 using DestroyerTest.Content.Projectiles;
 using DestroyerTest.Content.Tiles;
 using Microsoft.Xna.Framework;
@@ -44,16 +44,7 @@ namespace DestroyerTest.Content.RangedItems
 			Item.useAmmo = AmmoID.Arrow; // The "ammo Id" of the ammo item that this weapon uses. Ammo IDs are magic numbers that usually correspond to the item id of one item that most commonly represent the ammo type.
 		}
 
-        
-
-        // Please see Content/ExampleRecipes.cs for a detailed explanation of recipe creation.
-        public override void AddRecipes() {
-			CreateRecipe()
-				.AddIngredient<CunifeBar>(2)
-                .AddIngredient<PhosphorBronze>(6)
-				.AddTile(TileID.Anvils)
-				.Register();
-		}
+    
 
 		// This method lets you adjust position of the gun in the player's hands. Play with these values until it looks good with your graphics.
 		public override Vector2? HoldoutOffset() {

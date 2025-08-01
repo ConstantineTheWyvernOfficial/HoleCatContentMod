@@ -5,7 +5,6 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using DestroyerTest.Rarity;
-using DestroyerTest.Content.MetallurgySeries;
 
 namespace DestroyerTest.Content.Equips
 {

@@ -1,6 +1,5 @@
 
 using DestroyerTest.Content.MeleeWeapons;
-using DestroyerTest.Content.MetallurgySeries;
 using DestroyerTest.Content.Resources.Cloths;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
