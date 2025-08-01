@@ -5,7 +5,7 @@ using Terraria.ModLoader;
 using DestroyerTest.Rarity;
 using DestroyerTest.Content.Tiles;
 
-namespace DestroyerTest.Content
+namespace DestroyerTest.Content.Resources
 {
 	public class Vesper : ModItem
 	{
