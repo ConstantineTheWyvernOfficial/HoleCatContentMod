@@ -48,7 +48,7 @@ namespace DestroyerTest.Content.Projectiles.ConstitutionBoss
 				PRTLoader.GetParticleID<ColoredFire7>()
 			};
 
-			PRTLoader.NewParticle(types[Main.rand.Next(types.Length)], Projectile.Center, Vector2.Zero, ColorLib.StellarColor, 1);
+			PRTLoader.NewParticle(types[Main.rand.Next(types.Length)], Projectile.Center, Vector2.Zero, ColorLib.StellarColor, 9.5f);
 		}
 
 		public override void OnHitPlayer(Player target, Player.HurtInfo info)

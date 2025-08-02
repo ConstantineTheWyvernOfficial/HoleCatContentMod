@@ -53,7 +53,7 @@ namespace DestroyerTest.Content.Projectiles.NightmareRose
 				PRTLoader.GetParticleID<ColoredFire7>()
 			};
 
-			PRTLoader.NewParticle(types[Main.rand.Next(types.Length)], Projectile.Center, Vector2.Zero, ColorLib.CursedFlames, 2.5f);
+			PRTLoader.NewParticle(types[Main.rand.Next(types.Length)], Projectile.Center, Vector2.Zero, ColorLib.CursedFlames, 9.5f);
 			
 			if (gravityEnabled)
 			{
